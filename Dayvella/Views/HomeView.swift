@@ -105,7 +105,7 @@ struct HomeView: View {
     private var navigationContent: some View {
         NavigationStack {
             mainContent
-                .navigationTitle("CountMyDays")
+                .navigationTitle("Dayvella")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar { toolbarContent() }
         }

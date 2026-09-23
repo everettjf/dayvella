@@ -17,7 +17,7 @@ struct SettingsView: View {
     }
 
     private let supportEmailURL = URL(string: "mailto:xnuapp@gmail.com")
-    private let websiteURL = URL(string: "https://xnu.app/countmydays")
+    private let websiteURL = URL(string: "https://xnu.app/dayvella")
 
     var body: some View {
         NavigationStack {

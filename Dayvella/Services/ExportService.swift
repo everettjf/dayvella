@@ -11,7 +11,7 @@ struct ExportService {
     func export(entries: [Entry]) throws -> URL {
         let payload = entries.map { ExportEntry(entry: $0) }
         let data = try encoder.encode(payload)
-        let filename = "CountMyDays-export-\(ExportService.timestamp()).json"
+        let filename = "Dayvella-export-\(ExportService.timestamp()).json"
         let url = FileManager.default.temporaryDirectory.appendingPathComponent(filename)
         try data.write(to: url, options: Data.WritingOptions.atomic)
         return url

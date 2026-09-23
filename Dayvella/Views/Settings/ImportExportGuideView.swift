@@ -13,7 +13,7 @@ struct ImportExportGuideView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 sectionHeader(title: "Import JSON", systemImage: "tray.and.arrow.down")
-                Text("CountMyDays imports JSON arrays where every item represents an entry. Each one can be a count-up or count-down with its own timezone.")
+                Text("Dayvella imports JSON arrays where every item represents an entry. Each one can be a count-up or count-down with its own timezone.")
                     .foregroundStyle(.secondary)
 
                 if let sampleURL {

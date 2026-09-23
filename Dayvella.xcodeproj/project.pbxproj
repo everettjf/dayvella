@@ -10,7 +10,7 @@
 		03AA8FB9BF3537CF4364659D /* AppReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92C61898E935C4D9345CD00 /* AppReviewManager.swift */; };
 		0A993AFF7354AAF7CB77211A /* EntryTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A213A8B1FB52483C17C06 /* EntryTemplate.swift */; };
 		196637E2AA916E4390C885CA /* SearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB00BF23F5BE953CEBE471E /* SearchTabView.swift */; };
-		1BEB4D0B9010B04E72BAD29D /* CountMyDaysWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E9EA090DB851ABC1C7182C28 /* CountMyDaysWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1BEB4D0B9010B04E72BAD29D /* DayvellaWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E9EA090DB851ABC1C7182C28 /* DayvellaWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2E5474D8DC72449574B779B4 /* SyncSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C1F47BA17AA109788DAF35 /* SyncSnapshot.swift */; };
 		30BA663880CB61DD0B334E03 /* RepeatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B30342EB2D7F00D9CC573 /* RepeatRule.swift */; };
 		3348CD0CBABE5AF03F2ED811 /* ClearAllDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5A418B7D6F6CB64CE9271 /* ClearAllDataView.swift */; };
@@ -37,12 +37,12 @@
 		AFAE1D69E43E1D706A04CF63 /* OutOfRangeBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB25532D47431182B5F5EFF9 /* OutOfRangeBehavior.swift */; };
 		B3DA59049DB8F9C01D7C4805 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86046BAEBB0F7573C44FD9 /* Entry.swift */; };
 		B779E9D615D4E5BE00B16E17 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958B285290C629212BE26F5D /* ExportService.swift */; };
-		B8A292EB6FC2FFF46CF3196C /* CountMyDaysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390F15CD2FF90A8FA9BABDF6 /* CountMyDaysApp.swift */; };
+		B8A292EB6FC2FFF46CF3196C /* DayvellaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390F15CD2FF90A8FA9BABDF6 /* DayvellaApp.swift */; };
 		BDBA14237FFFC71EB8767AD8 /* DayCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11402023FDA87BF0A21E9E /* DayCounter.swift */; };
 		C80B229DDB8C9709A314C525 /* EntryEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE92689B863F19FC59715B /* EntryEditView.swift */; };
 		CA9075F0A65AA244BD899982 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C7FE5261227443151FEDEF /* AppTabView.swift */; };
 		CC77D1A2E1A26626B7905F8A /* ImportSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D0367C006C6265A24BBAA5 /* ImportSummaryView.swift */; };
-		CF0852FF8C0E2B24F83D33ED /* CountMyDaysWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492883AF3AAC6986D1BE8EAF /* CountMyDaysWidget.swift */; };
+		CF0852FF8C0E2B24F83D33ED /* DayvellaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492883AF3AAC6986D1BE8EAF /* DayvellaWidget.swift */; };
 		E70033DC7254765D5CB1D5BF /* TimeZonePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BF702162D874206A243DF8 /* TimeZonePickerView.swift */; };
 		ED06BBC79BA6BDC6A30AC4F7 /* EntrySnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD6BBDC3CDA11329F49B7E2 /* EntrySnapshot.swift */; };
 		F2D8FC73FF7FEC56AA76C6DC /* ImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F8CC072E5C6404E2B1F9A /* ImportService.swift */; };
@@ -56,7 +56,7 @@
 			containerPortal = F2C1D367E2825B2A240C6C7B /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5309074F40BEDCDFDBB3D66E;
-			remoteInfo = CountMyDaysWidget;
+			remoteInfo = DayvellaWidget;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -67,7 +67,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				1BEB4D0B9010B04E72BAD29D /* CountMyDaysWidget.appex in Embed Foundation Extensions */,
+				1BEB4D0B9010B04E72BAD29D /* DayvellaWidget.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,11 +84,11 @@
 		306808217ADDEDBF418DE3BE /* EntryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryType.swift; sourceTree = "<group>"; };
 		30AD925B8A0CD79750570DA4 /* TrendingCardPalettes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCardPalettes.swift; sourceTree = "<group>"; };
 		34C7D7A70F227FED065D49E2 /* DynamicTypeSize+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DynamicTypeSize+Helpers.swift"; sourceTree = "<group>"; };
-		390F15CD2FF90A8FA9BABDF6 /* CountMyDaysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountMyDaysApp.swift; sourceTree = "<group>"; };
+		390F15CD2FF90A8FA9BABDF6 /* DayvellaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayvellaApp.swift; sourceTree = "<group>"; };
 		3C7F8CC072E5C6404E2B1F9A /* ImportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportService.swift; sourceTree = "<group>"; };
 		47BF702162D874206A243DF8 /* TimeZonePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonePickerView.swift; sourceTree = "<group>"; };
 		48FE92689B863F19FC59715B /* EntryEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryEditView.swift; sourceTree = "<group>"; };
-		492883AF3AAC6986D1BE8EAF /* CountMyDaysWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountMyDaysWidget.swift; sourceTree = "<group>"; };
+		492883AF3AAC6986D1BE8EAF /* DayvellaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayvellaWidget.swift; sourceTree = "<group>"; };
 		64D0367C006C6265A24BBAA5 /* ImportSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportSummaryView.swift; sourceTree = "<group>"; };
 		65C7FE5261227443151FEDEF /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
 		6A11402023FDA87BF0A21E9E /* DayCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCounter.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		8C86046BAEBB0F7573C44FD9 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		8EE5A418B7D6F6CB64CE9271 /* ClearAllDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearAllDataView.swift; sourceTree = "<group>"; };
 		958B285290C629212BE26F5D /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
-		B42E294CB902DEFD507BD4E4 /* CountMyDays.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CountMyDays.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42E294CB902DEFD507BD4E4 /* Dayvella.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Dayvella.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B93C31568C37A2F93F095EA3 /* ImportExportGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportGuideView.swift; sourceTree = "<group>"; };
 		BA3CF8DBB59EA6223354F8A1 /* CardShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardShareService.swift; sourceTree = "<group>"; };
 		BB25532D47431182B5F5EFF9 /* OutOfRangeBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutOfRangeBehavior.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 		E3A99E6AE9270B42CF811BA3 /* Bundle+AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+AppInfo.swift"; sourceTree = "<group>"; };
 		E698A3140841C97558734CAC /* EntryDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDraft.swift; sourceTree = "<group>"; };
 		E7AD9DD012684564FBC2D746 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		E9EA090DB851ABC1C7182C28 /* CountMyDaysWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = CountMyDaysWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9EA090DB851ABC1C7182C28 /* DayvellaWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = DayvellaWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BF092067A1046E2EE4DDCB /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		FC4B30342EB2D7F00D9CC573 /* RepeatRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatRule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,12 +151,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		46A172219EF5CFB14238BF5A /* CountMyDaysWidget */ = {
+		46A172219EF5CFB14238BF5A /* DayvellaWidget */ = {
 			isa = PBXGroup;
 			children = (
-				492883AF3AAC6986D1BE8EAF /* CountMyDaysWidget.swift */,
+				492883AF3AAC6986D1BE8EAF /* DayvellaWidget.swift */,
 			);
-			path = CountMyDaysWidget;
+			path = DayvellaWidget;
 			sourceTree = "<group>";
 		};
 		5E59E68CBEEF2CA3956B0BC0 /* Views */ = {
@@ -196,11 +196,11 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		85DE5FDDC719FC40B56BE06C /* CountMyDays */ = {
+		85DE5FDDC719FC40B56BE06C /* Dayvella */ = {
 			isa = PBXGroup;
 			children = (
 				1E089659B3A2BBA5A651D04B /* Assets.xcassets */,
-				390F15CD2FF90A8FA9BABDF6 /* CountMyDaysApp.swift */,
+				390F15CD2FF90A8FA9BABDF6 /* DayvellaApp.swift */,
 				2472029F755F5D7EA7139CFE /* Models */,
 				18397BC23BE95875CED1502C /* Resources */,
 				B5DBB7CD0A843AF2A7B41585 /* Services */,
@@ -208,7 +208,7 @@
 				D00C0E1CC97BFE53E8C52020 /* Utilities */,
 				5E59E68CBEEF2CA3956B0BC0 /* Views */,
 			);
-			path = CountMyDays;
+			path = Dayvella;
 			sourceTree = "<group>";
 		};
 		B5DBB7CD0A843AF2A7B41585 /* Services */ = {
@@ -235,8 +235,8 @@
 		CF8575988AEB615775BCD74B = {
 			isa = PBXGroup;
 			children = (
-				85DE5FDDC719FC40B56BE06C /* CountMyDays */,
-				46A172219EF5CFB14238BF5A /* CountMyDaysWidget */,
+				85DE5FDDC719FC40B56BE06C /* Dayvella */,
+				46A172219EF5CFB14238BF5A /* DayvellaWidget */,
 				F531F808C714424A59F72708 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -258,8 +258,8 @@
 		F531F808C714424A59F72708 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B42E294CB902DEFD507BD4E4 /* CountMyDays.app */,
-				E9EA090DB851ABC1C7182C28 /* CountMyDaysWidget.appex */,
+				B42E294CB902DEFD507BD4E4 /* Dayvella.app */,
+				E9EA090DB851ABC1C7182C28 /* DayvellaWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,9 +267,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5309074F40BEDCDFDBB3D66E /* CountMyDaysWidget */ = {
+		5309074F40BEDCDFDBB3D66E /* DayvellaWidget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBA90A8B7149BD43EF9A36D6 /* Build configuration list for PBXNativeTarget "CountMyDaysWidget" */;
+			buildConfigurationList = DBA90A8B7149BD43EF9A36D6 /* Build configuration list for PBXNativeTarget "DayvellaWidget" */;
 			buildPhases = (
 				3DC7346E2718945D5DA7D17D /* Sources */,
 			);
@@ -277,16 +277,16 @@
 			);
 			dependencies = (
 			);
-			name = CountMyDaysWidget;
+			name = DayvellaWidget;
 			packageProductDependencies = (
 			);
-			productName = CountMyDaysWidget;
-			productReference = E9EA090DB851ABC1C7182C28 /* CountMyDaysWidget.appex */;
+			productName = DayvellaWidget;
+			productReference = E9EA090DB851ABC1C7182C28 /* DayvellaWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		A3B210B7915297CB519620DB /* CountMyDays */ = {
+		A3B210B7915297CB519620DB /* Dayvella */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 70B600BF56018EE2B26C77E1 /* Build configuration list for PBXNativeTarget "CountMyDays" */;
+			buildConfigurationList = 70B600BF56018EE2B26C77E1 /* Build configuration list for PBXNativeTarget "Dayvella" */;
 			buildPhases = (
 				AB58E38D0A13193E42F45D85 /* Sources */,
 				7BE6088A9279425A9725E7C1 /* Resources */,
@@ -297,11 +297,11 @@
 			dependencies = (
 				27B5C2B70114BFAC043F9B43 /* PBXTargetDependency */,
 			);
-			name = CountMyDays;
+			name = Dayvella;
 			packageProductDependencies = (
 			);
-			productName = CountMyDays;
-			productReference = B42E294CB902DEFD507BD4E4 /* CountMyDays.app */;
+			productName = Dayvella;
+			productReference = B42E294CB902DEFD507BD4E4 /* Dayvella.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -323,7 +323,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EA65FEC93ECFD3F41F6323C5 /* Build configuration list for PBXProject "CountMyDays" */;
+			buildConfigurationList = EA65FEC93ECFD3F41F6323C5 /* Build configuration list for PBXProject "Dayvella" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -337,8 +337,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A3B210B7915297CB519620DB /* CountMyDays */,
-				5309074F40BEDCDFDBB3D66E /* CountMyDaysWidget */,
+				A3B210B7915297CB519620DB /* Dayvella */,
+				5309074F40BEDCDFDBB3D66E /* DayvellaWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -360,7 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF0852FF8C0E2B24F83D33ED /* CountMyDaysWidget.swift in Sources */,
+				CF0852FF8C0E2B24F83D33ED /* DayvellaWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +376,7 @@
 				959F70ADBD7EA0B6B23D31B4 /* CardTypeTag.swift in Sources */,
 				3348CD0CBABE5AF03F2ED811 /* ClearAllDataView.swift in Sources */,
 				52ABAB173B7DDF3568724120 /* Color+Hex.swift in Sources */,
-				B8A292EB6FC2FFF46CF3196C /* CountMyDaysApp.swift in Sources */,
+				B8A292EB6FC2FFF46CF3196C /* DayvellaApp.swift in Sources */,
 				F82932327EB8080BBEE4FDAA /* DateFormatters.swift in Sources */,
 				BDBA14237FFFC71EB8767AD8 /* DayCounter.swift in Sources */,
 				AAD9D6CBDDA17B17C45EF574 /* DynamicTypeSize+Helpers.swift in Sources */,
@@ -413,7 +413,7 @@
 /* Begin PBXTargetDependency section */
 		27B5C2B70114BFAC043F9B43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5309074F40BEDCDFDBB3D66E /* CountMyDaysWidget */;
+			target = 5309074F40BEDCDFDBB3D66E /* DayvellaWidget */;
 			targetProxy = 86E71AB23874DB02648D32A2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -422,10 +422,10 @@
 		161EDA742A91A51E551AB0F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = CountMyDaysWidget/CountMyDaysWidget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DayvellaWidget/DayvellaWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 116;
-				INFOPLIST_FILE = CountMyDaysWidget/Info.plist;
+				INFOPLIST_FILE = DayvellaWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xnu.countmydays.widget;
@@ -503,14 +503,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = CountMyDays/CountMyDays.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Dayvella/Dayvella.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 116;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CountMyDays/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CountMyDays;
+				INFOPLIST_FILE = Dayvella/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dayvella;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -601,14 +601,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = CountMyDays/CountMyDays.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Dayvella/Dayvella.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 116;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CountMyDays/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CountMyDays;
+				INFOPLIST_FILE = Dayvella/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dayvella;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -628,10 +628,10 @@
 		F7D3533404C88E4443710D1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = CountMyDaysWidget/CountMyDaysWidget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DayvellaWidget/DayvellaWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 116;
-				INFOPLIST_FILE = CountMyDaysWidget/Info.plist;
+				INFOPLIST_FILE = DayvellaWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xnu.countmydays.widget;
@@ -645,7 +645,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		70B600BF56018EE2B26C77E1 /* Build configuration list for PBXNativeTarget "CountMyDays" */ = {
+		70B600BF56018EE2B26C77E1 /* Build configuration list for PBXNativeTarget "Dayvella" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEAD9D89CC927A78F2E10F98 /* Debug */,
@@ -654,7 +654,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		DBA90A8B7149BD43EF9A36D6 /* Build configuration list for PBXNativeTarget "CountMyDaysWidget" */ = {
+		DBA90A8B7149BD43EF9A36D6 /* Build configuration list for PBXNativeTarget "DayvellaWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7D3533404C88E4443710D1A /* Debug */,
@@ -663,7 +663,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		EA65FEC93ECFD3F41F6323C5 /* Build configuration list for PBXProject "CountMyDays" */ = {
+		EA65FEC93ECFD3F41F6323C5 /* Build configuration list for PBXProject "Dayvella" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96365C5D03F787902FC4DB97 /* Debug */,

@@ -1,4 +1,6 @@
-CountMyDays 1.2 让每个重要日期更容易查看和记住。
+CountMyDays is now Dayvella. Your dates, widgets, and iCloud data stay with you.
+
+Dayvella 1.2 让每个重要日期更容易查看和记住。
 
 • 主屏幕与锁屏小组件
 • 当天及提前 1、3、7、30 天提醒，也支持自定义天数

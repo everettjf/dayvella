@@ -1,4 +1,6 @@
-CountMyDays 1.2 makes every important date easier to see and remember.
+CountMyDays is now Dayvella. Your dates, widgets, and iCloud data stay with you.
+
+Dayvella 1.2 makes every important date easier to see and remember.
 
 • Home Screen and Lock Screen widgets
 • Reminders on the day, 1, 3, 7, or 30 days before, plus custom timing

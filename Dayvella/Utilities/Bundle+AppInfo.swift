@@ -8,7 +8,7 @@ extension Bundle {
         if let name = object(forInfoDictionaryKey: "CFBundleName") as? String, !name.isEmpty {
             return name
         }
-        return "CountMyDays"
+        return "Dayvella"
     }
 
     var marketingVersion: String {

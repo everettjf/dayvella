@@ -1,8 +1,12 @@
-# CountMyDays
+# Dayvella
 
-Repository: <https://github.com/everettjf/countdays>
+Repository: <https://github.com/everettjf/dayvella>
 
-CountMyDays is a SwiftUI iOS app for tracking countdowns and cumulative day counts. Create entries for important dates, track progress over time, and keep everything tidy with pinning, archiving, and export/import.
+[Website](https://xnu.app/dayvella/) · [App Store](https://apps.apple.com/app/id6753280745)
+
+Previously named CountMyDays. Dayvella is an update to the same app, not a separate installation.
+
+Dayvella is a SwiftUI iOS app for tracking countdowns and cumulative day counts. Create entries for important dates, track progress over time, and keep everything tidy with pinning, archiving, and export/import.
 
 
 ![Screenshot](screenshot.png)
@@ -26,11 +30,11 @@ CountMyDays is a SwiftUI iOS app for tracking countdowns and cumulative day coun
 
 ## Build
 ```sh
-xcodebuild -project CountMyDays.xcodeproj -scheme CountMyDays -sdk iphonesimulator build
+xcodebuild -project Dayvella.xcodeproj -scheme Dayvella -sdk iphonesimulator build
 ```
 
 ## Run
-Open `CountMyDays.xcodeproj` in Xcode and select a simulator/device.
+Open `Dayvella.xcodeproj` in Xcode and select a simulator/device.
 
 ## Import/Export
 - Exported files are JSON with ISO-8601 dates.
@@ -42,14 +46,14 @@ Open `CountMyDays.xcodeproj` in Xcode and select a simulator/device.
 - Sync uses last-modified timestamps and deletion records so edits and deletions merge safely across devices.
 
 ## Project Structure
-- `CountMyDays/`: main Swift/SwiftUI source.
-- `CountMyDays/Views/`: UI screens and reusable view components.
-- `CountMyDays/Models/`: data models (`Entry`, `EntryType`, etc.).
-- `CountMyDays/Services/`: app services (day counting, import/export, notifications).
-- `CountMyDays/Store/`: persistence and data store logic.
-- `CountMyDays/Utilities/`: helpers, formatters, extensions.
-- `CountMyDays/Assets.xcassets/` and `CountMyDays/Resources/`: assets and bundled data.
-- `CountMyDays.xcodeproj/`: Xcode project metadata.
+- `Dayvella/`: main Swift/SwiftUI source.
+- `Dayvella/Views/`: UI screens and reusable view components.
+- `Dayvella/Models/`: data models (`Entry`, `EntryType`, etc.).
+- `Dayvella/Services/`: app services (day counting, import/export, notifications).
+- `Dayvella/Store/`: persistence and data store logic.
+- `Dayvella/Utilities/`: helpers, formatters, extensions.
+- `Dayvella/Assets.xcassets/` and `Dayvella/Resources/`: assets and bundled data.
+- `Dayvella.xcodeproj/`: Xcode project metadata.
 
 ## Contributing
 - Follow the guidelines in `AGENTS.md`.
@@ -57,4 +61,19 @@ Open `CountMyDays.xcodeproj` in Xcode and select a simulator/device.
 - Include screenshots or screen recordings for UI changes.
 
 ## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=everettjf/countdays&type=Date)](https://star-history.com/#everettjf/countdays&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=everettjf/dayvella&type=Date)](https://star-history.com/#everettjf/dayvella&Date)
+
+## Rename compatibility
+
+The Dayvella rename preserves the app identity and existing user data:
+
+- App bundle ID: `com.xnu.countmydays`.
+- Widget bundle ID: `com.xnu.countmydays.widget`.
+- App Group: `group.com.xnu.countmydays`.
+- iCloud key-value store entitlement and all storage/defaults keys remain unchanged.
+- Local data continues to use the legacy `CountMyDays` directory.
+- Installed widgets retain the `CountMyDaysWidget` kind.
+- Exported filenames now start with `Dayvella`; the JSON format is unchanged and older exports remain importable.
+- The App Store record remains `6753280745`. Old website routes redirect to `/dayvella/`.
+
+The source folders, Xcode project/scheme, Swift package, app and widget display names now use Dayvella. Do not rename the legacy identifiers above when updating branding.

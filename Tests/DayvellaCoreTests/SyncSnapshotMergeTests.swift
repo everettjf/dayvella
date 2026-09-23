@@ -1,6 +1,6 @@
 import Foundation
 import Testing
-@testable import CountMyDaysCore
+@testable import DayvellaCore
 
 struct SyncSnapshotMergeTests {
     // MARK: - Union

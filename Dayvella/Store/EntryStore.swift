@@ -48,6 +48,7 @@ final class EntryStore: ObservableObject {
     ) {
         self.iCloudStore = iCloudStore
         let folder = fileManager.urls(for: .applicationSupportDirectory, in: .userDomainMask).first ?? FileManager.default.temporaryDirectory
+        // Keep the pre-Dayvella directory so existing installations retain their data.
         let directory = folder.appendingPathComponent("CountMyDays", isDirectory: true)
         if !fileManager.fileExists(atPath: directory.path) {
             try? fileManager.createDirectory(at: directory, withIntermediateDirectories: true)

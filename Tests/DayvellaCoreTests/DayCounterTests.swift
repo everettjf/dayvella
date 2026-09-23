@@ -1,6 +1,6 @@
 import Foundation
 import Testing
-@testable import CountMyDaysCore
+@testable import DayvellaCore
 
 struct DayCounterTests {
     private let losAngeles = TimeZone(identifier: "America/Los_Angeles")!

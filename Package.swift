@@ -3,19 +3,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "CountMyDaysCore",
+    name: "DayvellaCore",
     platforms: [.macOS(.v14)],
     products: [
-        .library(name: "CountMyDaysCore", targets: ["CountMyDaysCore"]),
+        .library(name: "DayvellaCore", targets: ["DayvellaCore"]),
     ],
     targets: [
         .target(
-            name: "CountMyDaysCore",
-            path: "CountMyDays",
+            name: "DayvellaCore",
+            path: "Dayvella",
             exclude: [
                 "Assets.xcassets",
-                "CountMyDays.entitlements",
-                "CountMyDaysApp.swift",
+                "Dayvella.entitlements",
+                "DayvellaApp.swift",
                 "Info.plist",
                 "Resources",
                 "Services/ExportService.swift",
@@ -46,9 +46,9 @@ let package = Package(
             ]
         ),
         .testTarget(
-            name: "CountMyDaysCoreTests",
-            dependencies: ["CountMyDaysCore"],
-            path: "Tests/CountMyDaysCoreTests"
+            name: "DayvellaCoreTests",
+            dependencies: ["DayvellaCore"],
+            path: "Tests/DayvellaCoreTests"
         ),
     ]
 )

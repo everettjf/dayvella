@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A3B210B7915297CB519620DB"
-               BuildableName = "CountMyDays.app"
-               BlueprintName = "CountMyDays"
-               ReferencedContainer = "container:CountMyDays.xcodeproj">
+               BuildableName = "Dayvella.app"
+               BlueprintName = "Dayvella"
+               ReferencedContainer = "container:Dayvella.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5309074F40BEDCDFDBB3D66E"
-               BuildableName = "CountMyDaysWidget.appex"
-               BlueprintName = "CountMyDaysWidget"
-               ReferencedContainer = "container:CountMyDays.xcodeproj">
+               BuildableName = "DayvellaWidget.appex"
+               BlueprintName = "DayvellaWidget"
+               ReferencedContainer = "container:Dayvella.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3B210B7915297CB519620DB"
-            BuildableName = "CountMyDays.app"
-            BlueprintName = "CountMyDays"
-            ReferencedContainer = "container:CountMyDays.xcodeproj">
+            BuildableName = "Dayvella.app"
+            BlueprintName = "Dayvella"
+            ReferencedContainer = "container:Dayvella.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3B210B7915297CB519620DB"
-            BuildableName = "CountMyDays.app"
-            BlueprintName = "CountMyDays"
-            ReferencedContainer = "container:CountMyDays.xcodeproj">
+            BuildableName = "Dayvella.app"
+            BlueprintName = "Dayvella"
+            ReferencedContainer = "container:Dayvella.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -89,9 +89,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A3B210B7915297CB519620DB"
-            BuildableName = "CountMyDays.app"
-            BlueprintName = "CountMyDays"
-            ReferencedContainer = "container:CountMyDays.xcodeproj">
+            BuildableName = "Dayvella.app"
+            BlueprintName = "Dayvella"
+            ReferencedContainer = "container:Dayvella.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

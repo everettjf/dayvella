@@ -104,7 +104,7 @@ private extension WidgetItem {
                                     colorHex: "#5B7CFA", iconEmoji: "✈️", isPinned: true)
 }
 
-private struct CountMyDaysWidgetView: View {
+private struct DayvellaWidgetView: View {
     @Environment(\.widgetFamily) private var family
     let entry: CountEntry
 
@@ -148,14 +148,15 @@ private struct CountMyDaysWidgetView: View {
 }
 
 @main
-struct CountMyDaysWidget: Widget {
+struct DayvellaWidget: Widget {
+    // WidgetKit identifies already-installed widgets by this stable legacy kind.
     let kind = "CountMyDaysWidget"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            CountMyDaysWidgetView(entry: entry)
+            DayvellaWidgetView(entry: entry)
         }
-        .configurationDisplayName("CountMyDays")
+        .configurationDisplayName("Dayvella")
         .description("See your pinned or nearest day counter at a glance.")
         .supportedFamilies([.systemSmall, .systemMedium, .accessoryInline, .accessoryCircular, .accessoryRectangular])
     }

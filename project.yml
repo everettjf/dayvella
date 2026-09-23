@@ -1,4 +1,4 @@
-name: CountMyDays
+name: Dayvella
 options:
   bundleIdPrefix: com.xnu
   deploymentTarget:
@@ -15,14 +15,14 @@ settings:
     STRING_CATALOG_GENERATE_SYMBOLS: YES
     SWIFT_EMIT_LOC_STRINGS: YES
 targets:
-  CountMyDays:
+  Dayvella:
     type: application
     platform: iOS
     sources:
-      - path: CountMyDays
+      - path: Dayvella
         excludes:
           - Info.plist
-          - CountMyDays.entitlements
+          - Dayvella.entitlements
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.xnu.countmydays
@@ -30,9 +30,9 @@ targets:
         MARKETING_VERSION: "1.2"
         CURRENT_PROJECT_VERSION: 116
         CODE_SIGN_STYLE: Automatic
-        CODE_SIGN_ENTITLEMENTS: CountMyDays/CountMyDays.entitlements
+        CODE_SIGN_ENTITLEMENTS: Dayvella/Dayvella.entitlements
         GENERATE_INFOPLIST_FILE: YES
-        INFOPLIST_KEY_CFBundleDisplayName: CountMyDays
+        INFOPLIST_KEY_CFBundleDisplayName: Dayvella
         INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
@@ -46,20 +46,20 @@ targets:
         ENABLE_PREVIEWS: YES
         LD_RUNPATH_SEARCH_PATHS: $(inherited) @executable_path/Frameworks
     dependencies:
-      - target: CountMyDaysWidget
+      - target: DayvellaWidget
         embed: true
-  CountMyDaysWidget:
+  DayvellaWidget:
     type: app-extension
     platform: iOS
     sources:
-      - path: CountMyDaysWidget
+      - path: DayvellaWidget
         excludes:
           - Info.plist
-          - CountMyDaysWidget.entitlements
+          - DayvellaWidget.entitlements
     info:
-      path: CountMyDaysWidget/Info.plist
+      path: DayvellaWidget/Info.plist
       properties:
-        CFBundleDisplayName: CountMyDays Widget
+        CFBundleDisplayName: Dayvella Widget
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         NSExtension:
@@ -71,16 +71,16 @@ targets:
         MARKETING_VERSION: "1.2"
         CURRENT_PROJECT_VERSION: 116
         CODE_SIGN_STYLE: Automatic
-        CODE_SIGN_ENTITLEMENTS: CountMyDaysWidget/CountMyDaysWidget.entitlements
+        CODE_SIGN_ENTITLEMENTS: DayvellaWidget/DayvellaWidget.entitlements
         SKIP_INSTALL: YES
         TARGETED_DEVICE_FAMILY: 1,2
         LD_RUNPATH_SEARCH_PATHS: $(inherited) @executable_path/Frameworks @executable_path/../../Frameworks
 schemes:
-  CountMyDays:
+  Dayvella:
     build:
       targets:
-        CountMyDays: all
-        CountMyDaysWidget: all
+        Dayvella: all
+        DayvellaWidget: all
     run:
       config: Debug
     archive:

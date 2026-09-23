@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct CountMyDaysApp: App {
+struct DayvellaApp: App {
     @StateObject private var entryStore: EntryStore
     @Environment(\.scenePhase) private var scenePhase
 
