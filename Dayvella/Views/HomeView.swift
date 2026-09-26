@@ -403,7 +403,7 @@ private struct LayoutMetrics {
         emptyStatePadding = useWide ? 28 : 20
         emptyStateMaxWidth = useWide ? 500 : 400
         minColumnWidth = useWide ? 320 : 260
-        maxColumnWidth = useWide ? 420 : 360
+        maxColumnWidth = useWide ? 420 : .infinity
         contentAlignment = useWide ? .center : .leading
         self.showsFilterPicker = showsFilterPicker
         if useWide {
