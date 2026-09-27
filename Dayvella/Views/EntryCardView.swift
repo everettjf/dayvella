@@ -181,30 +181,30 @@ private struct CardPalette {
         let raisedSurface = UIColor.tertiarySystemGroupedBackground.resolvedColor(with: traits)
 
         if colorScheme == .dark {
-            let middleColor = uiAccent.blended(withFraction: 0.82, of: groupedSurface)
-            let topColor = middleColor.blended(withFraction: 0.38, of: raisedSurface)
-            let bottomColor = middleColor.blended(withFraction: 0.12, of: .black)
+            let middleColor = uiAccent.blended(withFraction: 0.48, of: groupedSurface)
+            let topColor = middleColor.blended(withFraction: 0.18, of: raisedSurface)
+            let bottomColor = middleColor.blended(withFraction: 0.20, of: .black)
 
             top = Color(topColor)
             middle = Color(middleColor)
             bottom = Color(bottomColor)
-            glowStart = accent.opacity(0.08)
+            glowStart = accent.opacity(0.12)
             glowEnd = .clear
             innerStroke = Color.white.opacity(0.07)
-            frame = accent.opacity(0.22)
+            frame = accent.opacity(0.46)
             shadow = Color.black.opacity(0.24)
         } else {
-            let middleColor = uiAccent.blended(withFraction: 0.86, of: groupedSurface)
-            let topColor = middleColor.blended(withFraction: 0.72, of: raisedSurface)
-            let bottomColor = middleColor.blended(withFraction: 0.28, of: groupedSurface)
+            let middleColor = uiAccent.blended(withFraction: 0.58, of: groupedSurface)
+            let topColor = middleColor.blended(withFraction: 0.35, of: raisedSurface)
+            let bottomColor = middleColor.blended(withFraction: 0.15, of: groupedSurface)
 
             top = Color(topColor)
             middle = Color(middleColor)
             bottom = Color(bottomColor)
-            glowStart = accent.opacity(0.055)
+            glowStart = accent.opacity(0.09)
             glowEnd = .clear
             innerStroke = Color.white.opacity(0.72)
-            frame = accent.opacity(0.14)
+            frame = accent.opacity(0.28)
             shadow = Color.black.opacity(0.07)
         }
 

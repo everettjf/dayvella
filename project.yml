@@ -28,7 +28,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.xnu.countmydays
         PRODUCT_NAME: $(TARGET_NAME)
         MARKETING_VERSION: "1.2"
-        CURRENT_PROJECT_VERSION: 116
+        CURRENT_PROJECT_VERSION: 119
         CODE_SIGN_STYLE: Automatic
         CODE_SIGN_ENTITLEMENTS: Dayvella/Dayvella.entitlements
         GENERATE_INFOPLIST_FILE: YES
@@ -69,7 +69,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.xnu.countmydays.widget
         PRODUCT_NAME: $(TARGET_NAME)
         MARKETING_VERSION: "1.2"
-        CURRENT_PROJECT_VERSION: 116
+        CURRENT_PROJECT_VERSION: 119
         CODE_SIGN_STYLE: Automatic
         CODE_SIGN_ENTITLEMENTS: DayvellaWidget/DayvellaWidget.entitlements
         SKIP_INSTALL: YES
