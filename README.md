@@ -4,6 +4,12 @@ Repository: <https://github.com/everettjf/dayvella>
 
 [Website](https://xnu.app/dayvella/) · [App Store](https://apps.apple.com/app/id6753280745)
 
+The landing page and [privacy policy](https://xnu.app/dayvella/privacy/) are
+published from [`docs/`](docs/) with GitHub Pages (`main` branch, `/docs`).
+The project site inherits `xnu.app` from the account site, so these URLs stay
+the same. The pages use shared CSS, icons, and navigation assets from the main
+`xnu.app` site; keep those root-relative asset paths working when editing them.
+
 Previously named CountMyDays. Dayvella is an update to the same app, not a separate installation.
 
 Dayvella is a SwiftUI iOS app for tracking countdowns and cumulative day counts. Create entries for important dates, track progress over time, and keep everything tidy with pinning, archiving, and export/import.
