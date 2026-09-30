@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 2,
+  "appName": "Dayvella",
+  "themeId": "warm-editorial",
+  "fontId": "template-default",
+  "connectedCanvas": false,
+  "locales": [
+    "en"
+  ],
+  "locale": "en",
+  "device": "ipad",
+  "orientation": "portrait",
+  "appIcon": "/app-icon.png",
+  "slidesByDevice": {
+    "iphone": [
+      {
+        "id": "day-1",
+        "layout": "hero",
+        "label": {
+          "en": "DAYVELLA · DAYS THAT MATTER"
+        },
+        "headline": {
+          "en": "Every day has\na story."
+        },
+        "screenshot": "/screenshots/apple/iphone/en/01.png",
+        "inverted": false
+      },
+      {
+        "id": "day-2",
+        "layout": "device-top",
+        "label": {
+          "en": "COUNT UP OR DOWN"
+        },
+        "headline": {
+          "en": "See how far.\nSee how close."
+        },
+        "screenshot": "/screenshots/apple/iphone/en/02.png",
+        "inverted": true
+      },
+      {
+        "id": "day-3",
+        "layout": "device-bottom",
+        "label": {
+          "en": "YOUR DAYS, YOUR STYLE"
+        },
+        "headline": {
+          "en": "Make each moment\nyours."
+        },
+        "screenshot": "/screenshots/apple/iphone/en/03.png",
+        "inverted": false
+      }
+    ],
+    "android": [
+      {
+        "id": "s_mukl1fbi_5",
+        "layout": "hero",
+        "label": {
+          "en": "MEET YOUR APP"
+        },
+        "headline": {
+          "en": "Sell one\nidea per slide."
+        },
+        "screenshot": ""
+      },
+      {
+        "id": "s_mukl1fbi_6",
+        "layout": "device-bottom",
+        "label": {
+          "en": "FEATURE 01"
+        },
+        "headline": {
+          "en": "Your headline\nlives here."
+        },
+        "screenshot": ""
+      },
+      {
+        "id": "s_mukl1fbi_7",
+        "layout": "two-devices",
+        "label": {
+          "en": "FEATURE 02"
+        },
+        "headline": {
+          "en": "Show two\nscreens at once."
+        },
+        "screenshot": "",
+        "screenshotSecondary": ""
+      },
+      {
+        "id": "s_mukl1fbi_8",
+        "layout": "device-top",
+        "label": {
+          "en": "FEATURE 03"
+        },
+        "headline": {
+          "en": "Flip the contrast\nfor visual rhythm."
+        },
+        "screenshot": "",
+        "inverted": true
+      },
+      {
+        "id": "s_mukl1fbi_9",
+        "layout": "no-device",
+        "label": {
+          "en": "MORE"
+        },
+        "headline": {
+          "en": "And so\nmuch more."
+        },
+        "screenshot": ""
+      }
+    ],
+    "ipad": [
+      {
+        "id": "day-ipad-1",
+        "layout": "hero",
+        "label": {
+          "en": "DAYVELLA FOR IPAD"
+        },
+        "headline": {
+          "en": "Your milestones,\nat a glance."
+        },
+        "screenshot": "/screenshots/apple/ipad/en/01.png",
+        "inverted": false
+      },
+      {
+        "id": "day-ipad-2",
+        "layout": "device-top",
+        "label": {
+          "en": "FLEXIBLE DATES"
+        },
+        "headline": {
+          "en": "Count up.\nCount down."
+        },
+        "screenshot": "/screenshots/apple/ipad/en/02.png",
+        "inverted": true
+      },
+      {
+        "id": "day-ipad-3",
+        "layout": "device-bottom",
+        "label": {
+          "en": "LIGHT OR DARK"
+        },
+        "headline": {
+          "en": "A look for\nevery moment."
+        },
+        "screenshot": "/screenshots/apple/ipad/en/03.png",
+        "inverted": false
+      }
+    ],
+    "tvos": [
+      {
+        "id": "s_mukl1fbi_d",
+        "layout": "hero",
+        "label": {
+          "en": "MEET YOUR APP"
+        },
+        "headline": {
+          "en": "Made for\nthe living room."
+        },
+        "screenshot": ""
+      },
+      {
+        "id": "s_mukl1fbi_e",
+        "layout": "split-landscape",
+        "label": {
+          "en": "FEATURE 01"
+        },
+        "headline": {
+          "en": "One idea\nper screen."
+        },
+        "screenshot": ""
+      },
+      {
+        "id": "s_mukl1fbi_f",
+        "layout": "device-top",
+        "label": {
+          "en": "FEATURE 02"
+        },
+        "headline": {
+          "en": "Flip the contrast."
+        },
+        "screenshot": "",
+        "inverted": true
+      },
+      {
+        "id": "s_mukl1fbi_g",
+        "layout": "no-device",
+        "label": {
+          "en": "MORE"
+        },
+        "headline": {
+          "en": "And so\nmuch more."
+        },
+        "screenshot": ""
+      }
+    ],
+    "watchos": [
+      {
+        "id": "s_mukl1fbi_h",
+        "layout": "hero",
+        "label": {
+          "en": "MEET YOUR APP"
+        },
+        "headline": {
+          "en": "On your\nwrist."
+        },
+        "screenshot": ""
+      },
+      {
+        "id": "s_mukl1fbi_i",
+        "layout": "device-bottom",
+        "label": {
+          "en": "FEATURE 01"
+        },
+        "headline": {
+          "en": "One glance.\nDone."
+        },
+        "screenshot": ""
+      },
+      {
+        "id": "s_mukl1fbi_j",
+        "layout": "device-top",
+        "label": {
+          "en": "FEATURE 02"
+        },
+        "headline": {
+          "en": "Always\nwith you."
+        },
+        "screenshot": "",
+        "inverted": true
+      }
+    ],
+    "carplay": [
+      {
+        "id": "s_mukl1fbi_k",
+        "layout": "split-landscape",
+        "label": {
+          "en": "CARPLAY"
+        },
+        "headline": {
+          "en": "Eyes on\nthe road."
+        },
+        "screenshot": ""
+      },
+      {
+        "id": "s_mukl1fbi_l",
+        "layout": "device-bottom",
+        "label": {
+          "en": "FEATURE 01"
+        },
+        "headline": {
+          "en": "Everything, one tap away."
+        },
+        "screenshot": ""
+      },
+      {
+        "id": "s_mukl1fbi_m",
+        "layout": "device-top",
+        "label": {
+          "en": "FEATURE 02"
+        },
+        "headline": {
+          "en": "Made for every drive."
+        },
+        "screenshot": "",
+        "inverted": true
+      }
+    ],
+    "mac": [
+      {
+        "id": "s_mukl1fbi_n",
+        "layout": "hero",
+        "label": {
+          "en": "MEET YOUR APP"
+        },
+        "headline": {
+          "en": "Made for\nyour Mac."
+        },
+        "screenshot": ""
+      },
+      {
+        "id": "s_mukl1fbi_o",
+        "layout": "split-landscape",
+        "label": {
+          "en": "FEATURE 01"
+        },
+        "headline": {
+          "en": "Everything in\none window."
+        },
+        "screenshot": ""
+      },
+      {
+        "id": "s_mukl1fbi_p",
+        "layout": "device-top",
+        "label": {
+          "en": "FEATURE 02"
+        },
+        "headline": {
+          "en": "One shortcut away."
+        },
+        "screenshot": "",
+        "inverted": true
+      },
+      {
+        "id": "s_mukl1fbi_q",
+        "layout": "two-devices",
+        "label": {
+          "en": "FEATURE 03"
+        },
+        "headline": {
+          "en": "Work across windows."
+        },
+        "screenshot": "",
+        "screenshotSecondary": ""
+      },
+      {
+        "id": "s_mukl1fbi_r",
+        "layout": "no-device",
+        "label": {
+          "en": "MORE"
+        },
+        "headline": {
+          "en": "And so\nmuch more."
+        },
+        "screenshot": ""
+      }
+    ],
+    "android-7": [
+      {
+        "id": "s_mukl1fbi_s",
+        "layout": "hero",
+        "label": {
+          "en": "MEET YOUR APP"
+        },
+        "headline": {
+          "en": "Pocket-sized\npower."
+        },
+        "screenshot": ""
+      },
+      {
+        "id": "s_mukl1fbi_t",
+        "layout": "split-landscape",
+        "label": {
+          "en": "FEATURE 01"
+        },
+        "headline": {
+          "en": "Wide canvas,\nbigger ideas."
+        },
+        "screenshot": ""
+      }
+    ],
+    "android-10": [
+      {
+        "id": "s_mukl1fbi_u",
+        "layout": "hero",
+        "label": {
+          "en": "MEET YOUR APP"
+        },
+        "headline": {
+          "en": "Made for\nthe big screen."
+        },
+        "screenshot": ""
+      },
+      {
+        "id": "s_mukl1fbi_v",
+        "layout": "split-landscape",
+        "label": {
+          "en": "FEATURE 01"
+        },
+        "headline": {
+          "en": "Wide canvas,\nbigger ideas."
+        },
+        "screenshot": ""
+      }
+    ],
+    "feature-graphic": [
+      {
+        "id": "s_mukl1fbi_w",
+        "layout": "feature-graphic",
+        "label": {},
+        "headline": {
+          "en": "Your tagline goes here."
+        },
+        "screenshot": ""
+      }
+    ]
+  },
+  "crossScreenMockupsByDevice": {
+    "iphone": [],
+    "ipad": [],
+    "android": [],
+    "android-7": [],
+    "android-10": [],
+    "feature-graphic": []
+  }
+}
