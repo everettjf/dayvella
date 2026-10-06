@@ -52,6 +52,7 @@ struct SettingsView: View {
                 }
 
                 Section("Support") {
+                    Link("Discord", destination: URL(string: "https://discord.gg/eGzEaP6TzR")!)
                     if let websiteURL {
                         Button {
                             dismissAndOpen(websiteURL)

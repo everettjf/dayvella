@@ -1,5 +1,7 @@
 # Dayvella
 
+[Discord](https://discord.gg/eGzEaP6TzR)
+
 Repository: <https://github.com/everettjf/dayvella>
 
 [Website](https://xnu.app/dayvella/) · [App Store](https://apps.apple.com/app/id6753280745)
