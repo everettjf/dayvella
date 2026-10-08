@@ -108,3 +108,7 @@ DEVELOPER_DIR=/Applications/Xcode271.app/Contents/Developer xcodebuild \
 ```
 
 The UI tests use synthetic screenshot entries with iCloud synchronization disabled. Use a dedicated test simulator; the test dataset persists locally between launches.
+
+## Xcode 26 compatibility
+
+The `Xcode 26 compatibility` GitHub Actions workflow builds the app and widget in Debug for the simulator and Release for devices using Xcode 26.0.1 and 26.3. It also runs core tests and validates compiled localization resources. Signing is disabled for these compile checks. The workflow runs on pushes and pull requests.
