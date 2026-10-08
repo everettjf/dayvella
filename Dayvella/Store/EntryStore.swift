@@ -12,16 +12,16 @@ final class EntryStore: ObservableObject {
 
         var title: String {
             switch self {
-            case .all: return "All"
-            case .pinned: return "Pinned"
-            case .archived: return "Archived"
+            case .all: return String(localized: "All")
+            case .pinned: return String(localized: "Pinned")
+            case .archived: return String(localized: "Archived")
             }
         }
     }
 
     @Published private(set) var entries: [Entry] = []
 
-    private var allEntries: [Entry] = []
+    @Published private(set) var allEntries: [Entry] = []
     private var deletedAt: [UUID: Date] = [:]
     private var filter: Filter = .all
     private var searchText: String = ""
@@ -138,7 +138,7 @@ final class EntryStore: ObservableObject {
         copy.id = UUID()
         copy.isPinned = false
         copy.isArchived = false
-        copy.title += " (Copy)"
+        copy.title = String(localized: "\(copy.title) (Copy)")
         let timezone = copy.timezone
         if let start = copy.startDate {
             copy.startDate = DayCounter.startOfDay(start, in: timezone)
@@ -233,6 +233,10 @@ final class EntryStore: ObservableObject {
     }
 
     private func startICloudSync() {
+        #if DEBUG
+        // Keep disposable screenshot samples isolated from iCloud.
+        if ProcessInfo.processInfo.arguments.contains("-SeedStoreScreenshots") { return }
+        #endif
         iCloudObserver = NotificationCenter.default.publisher(
             for: NSUbiquitousKeyValueStore.didChangeExternallyNotification,
             object: iCloudStore
@@ -251,6 +255,10 @@ final class EntryStore: ObservableObject {
     }
 
     private func mergeFromICloud() {
+        #if DEBUG
+        // Keep disposable screenshot samples isolated from iCloud.
+        if ProcessInfo.processInfo.arguments.contains("-SeedStoreScreenshots") { return }
+        #endif
         guard let data = iCloudStore.data(forKey: Self.iCloudSnapshotKey),
               let remote = try? decoder.decode(SyncSnapshot.self, from: data) else {
             return
@@ -266,6 +274,10 @@ final class EntryStore: ObservableObject {
     }
 
     private func pushToICloud(_ snapshot: SyncSnapshot) {
+        #if DEBUG
+        // Keep disposable screenshot samples isolated from iCloud.
+        if ProcessInfo.processInfo.arguments.contains("-SeedStoreScreenshots") { return }
+        #endif
         var snapshotToUpload = snapshot
         if let remoteData = iCloudStore.data(forKey: Self.iCloudSnapshotKey),
            let remote = try? decoder.decode(SyncSnapshot.self, from: remoteData) {

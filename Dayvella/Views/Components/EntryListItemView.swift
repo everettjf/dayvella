@@ -21,10 +21,10 @@ struct EntryListItemView: View {
         }
         .buttonStyle(.plain)
         .contextMenu {
-            Button(entry.isPinned ? "Unpin" : "Pin") {
+            Button(entry.isPinned ? String(localized: "Unpin") : String(localized: "Pin")) {
                 onAction(entry, .togglePin)
             }
-            Button(entry.isArchived ? "Unarchive" : "Archive") {
+            Button(entry.isArchived ? String(localized: "Unarchive") : String(localized: "Archive")) {
                 onAction(entry, .toggleArchive)
             }
             Button("Duplicate") {
@@ -51,19 +51,19 @@ struct EntryListItemView: View {
     private var accessibilityLabel: String {
         let days = DayCounter.days(for: entry)
         let formatter = DateFormatters.accessibilityFormatter
-        let daysString = formatter.string(from: DateComponents(day: abs(days))) ?? "\(abs(days)) days"
+        let daysString = formatter.string(from: DateComponents(day: abs(days))) ?? String(localized: "\(abs(days)) days")
         switch entry.entryType {
         case .countUp:
             if days >= 0 {
-                return "\(entry.title), \(daysString) since start"
+                return String(localized: "\(entry.title), \(daysString) since start")
             } else {
-                return "\(entry.title), starts in \(daysString)"
+                return String(localized: "\(entry.title), starts in \(daysString)")
             }
         case .countDown:
             if days >= 0 {
-                return "\(entry.title), \(daysString) remaining"
+                return String(localized: "\(entry.title), \(daysString) remaining")
             } else {
-                return "\(entry.title), target passed \(daysString) ago"
+                return String(localized: "\(entry.title), target passed \(daysString) ago")
             }
         }
     }

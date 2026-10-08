@@ -60,7 +60,7 @@ struct ImportExportGuideView: View {
                 }
                 .buttonStyle(.borderedProminent)
 
-                Text("Tip: Re-importing the exported file updates entries with matching IDs and adds any new ones.")
+                Text("Tip: Entries with matching IDs are skipped when re-importing an exported file.")
                     .font(.footnote)
                     .foregroundStyle(.secondary)
                     .padding(.top, 6)
@@ -76,13 +76,13 @@ struct ImportExportGuideView: View {
         }
     }
 
-    private func sectionHeader(title: String, systemImage: String) -> some View {
+    private func sectionHeader(title: LocalizedStringKey, systemImage: String) -> some View {
         Label(title, systemImage: systemImage)
             .font(.title3.weight(.bold))
             .foregroundStyle(.primary)
     }
 
-    private func checklistRow(text: String) -> some View {
+    private func checklistRow(text: LocalizedStringKey) -> some View {
         HStack(alignment: .top, spacing: 8) {
             Image(systemName: "checkmark.seal.fill")
                 .foregroundStyle(Color(hex: "#00E0A4"))

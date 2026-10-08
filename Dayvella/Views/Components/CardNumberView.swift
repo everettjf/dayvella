@@ -2,7 +2,7 @@ import SwiftUI
 
 struct CardNumberView: View {
     let value: Int
-    var label: String = "Days"
+    var label: String = String(localized: "Days")
     var color: Color = Color(hex: "#00E0A4")
     @Environment(\.colorScheme) private var colorScheme
 

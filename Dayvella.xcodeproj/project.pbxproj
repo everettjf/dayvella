@@ -7,67 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03AA8FB9BF3537CF4364659D /* AppReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92C61898E935C4D9345CD00 /* AppReviewManager.swift */; };
-		0A993AFF7354AAF7CB77211A /* EntryTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A213A8B1FB52483C17C06 /* EntryTemplate.swift */; };
-		196637E2AA916E4390C885CA /* SearchTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB00BF23F5BE953CEBE471E /* SearchTabView.swift */; };
-		1BEB4D0B9010B04E72BAD29D /* DayvellaWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E9EA090DB851ABC1C7182C28 /* DayvellaWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2E5474D8DC72449574B779B4 /* SyncSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C1F47BA17AA109788DAF35 /* SyncSnapshot.swift */; };
-		30BA663880CB61DD0B334E03 /* RepeatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B30342EB2D7F00D9CC573 /* RepeatRule.swift */; };
-		3348CD0CBABE5AF03F2ED811 /* ClearAllDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5A418B7D6F6CB64CE9271 /* ClearAllDataView.swift */; };
-		39CDEEE7FF7E82D53CF81C3D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A881492F2277995D05C62DE /* SettingsView.swift */; };
-		3BA5E66D07929CDC696875A4 /* TimeZone+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEED858CF0CF41994E702A7 /* TimeZone+List.swift */; };
-		3D1A0C287F9DD0437CD29882 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BF092067A1046E2EE4DDCB /* NotificationService.swift */; };
-		4AD19B01EF0E0B911506349B /* ImportExportGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93C31568C37A2F93F095EA3 /* ImportExportGuideView.swift */; };
-		4B517EEEC2BD6414E8FA7EDF /* TrendingCardPalettes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AD925B8A0CD79750570DA4 /* TrendingCardPalettes.swift */; };
-		506DF23CD37F101136644BA6 /* EntryListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F3E66F1114E4F6E748C524 /* EntryListItemView.swift */; };
-		50D15A8DEEAE056759A25AA4 /* sample_import.json in Resources */ = {isa = PBXBuildFile; fileRef = BF3E4948E1D0DE9DCC25083D /* sample_import.json */; };
-		52ABAB173B7DDF3568724120 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779EE8DFEF18AED6BA784DFF /* Color+Hex.swift */; };
-		565F5606F60C067B73EAB556 /* Bundle+AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A99E6AE9270B42CF811BA3 /* Bundle+AppInfo.swift */; };
-		5B11F36B89F91102F72DB55F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD9DD012684564FBC2D746 /* HomeView.swift */; };
-		671F202992B6C344C98BE813 /* EntryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC97213DCDA130E98BAE536 /* EntryStore.swift */; };
-		6DFA33E55A6B8DE3D28E21DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E089659B3A2BBA5A651D04B /* Assets.xcassets */; };
-		87F0032C399D66C90C7AA1AF /* CardShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3CF8DBB59EA6223354F8A1 /* CardShareService.swift */; };
-		8E4044FD8CE55F0BF5C16CBC /* EntryDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = E698A3140841C97558734CAC /* EntryDraft.swift */; };
-		959F70ADBD7EA0B6B23D31B4 /* CardTypeTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29DDBC7FA5E791F1AC27729 /* CardTypeTag.swift */; };
-		993879E37F842BD49412A999 /* WidgetSnapshotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E981AE786399B16AED20D /* WidgetSnapshotService.swift */; };
-		A7B6B5DBD370447E48A233AA /* EntryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306808217ADDEDBF418DE3BE /* EntryType.swift */; };
-		AAD9D6CBDDA17B17C45EF574 /* DynamicTypeSize+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C7D7A70F227FED065D49E2 /* DynamicTypeSize+Helpers.swift */; };
-		AE58D95BBD0B0838152A1305 /* EntryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847A4D0CE2511AFE26789FB /* EntryCardView.swift */; };
-		AE734899757BDBE20C4FBE39 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C874EFC6AC0E1D7B3D11327B /* ShareSheet.swift */; };
-		AFAE1D69E43E1D706A04CF63 /* OutOfRangeBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB25532D47431182B5F5EFF9 /* OutOfRangeBehavior.swift */; };
-		B3DA59049DB8F9C01D7C4805 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86046BAEBB0F7573C44FD9 /* Entry.swift */; };
-		B779E9D615D4E5BE00B16E17 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958B285290C629212BE26F5D /* ExportService.swift */; };
-		B8A292EB6FC2FFF46CF3196C /* DayvellaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390F15CD2FF90A8FA9BABDF6 /* DayvellaApp.swift */; };
-		BDBA14237FFFC71EB8767AD8 /* DayCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11402023FDA87BF0A21E9E /* DayCounter.swift */; };
-		C80B229DDB8C9709A314C525 /* EntryEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FE92689B863F19FC59715B /* EntryEditView.swift */; };
-		CA9075F0A65AA244BD899982 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C7FE5261227443151FEDEF /* AppTabView.swift */; };
-		CC77D1A2E1A26626B7905F8A /* ImportSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D0367C006C6265A24BBAA5 /* ImportSummaryView.swift */; };
-		CF0852FF8C0E2B24F83D33ED /* DayvellaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492883AF3AAC6986D1BE8EAF /* DayvellaWidget.swift */; };
-		E70033DC7254765D5CB1D5BF /* TimeZonePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BF702162D874206A243DF8 /* TimeZonePickerView.swift */; };
-		ED06BBC79BA6BDC6A30AC4F7 /* EntrySnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD6BBDC3CDA11329F49B7E2 /* EntrySnapshot.swift */; };
-		F2D8FC73FF7FEC56AA76C6DC /* ImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F8CC072E5C6404E2B1F9A /* ImportService.swift */; };
-		F82932327EB8080BBEE4FDAA /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740CF0839A0872F6E4C3966E /* DateFormatters.swift */; };
-		FEDEA89D1A78697BBD40C448 /* CardNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A6D562D5BDB8D3EE369A2 /* CardNumberView.swift */; };
+		00986E46E48DCF5D8239E4A7 /* EntryDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD9EB4654AE289F9905736 /* EntryDraft.swift */; };
+		08BE50CAF1EE13F4B9AAAA7C /* EntryEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DFAD4D0A490881E8FEB7B6 /* EntryEditView.swift */; };
+		13FDBAB20892A3506D485178 /* EntrySnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B1776F5A5EAB52B53E491 /* EntrySnapshot.swift */; };
+		19433183A4F9A7ED6A9F735D /* TimeZonePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28B41E9C5D408EDBEA3907E /* TimeZonePickerView.swift */; };
+		1D69FBC23359D6F4059E25EE /* ImportExportGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92F1C9BD9A5C6F4E97A423 /* ImportExportGuideView.swift */; };
+		2090BEC0ECC25D74E9C6B77B /* RepeatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097399F37D0870986A3E1C3E /* RepeatRule.swift */; };
+		2CBCDC4FD2A91E8F1EE469C7 /* EntryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA07DA1D877193E42E19A3 /* EntryType.swift */; };
+		2F7A73524295D8418F70AD1F /* SyncSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221257C753E157C31E0C6EC5 /* SyncSnapshot.swift */; };
+		36B17B7B5587B34AEDC21234 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F39914743F70473C9B7DC92 /* Color+Hex.swift */; };
+		46122CB5DFD388375E523277 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D7234D25FB1E8055B110F /* ShareSheet.swift */; };
+		467B43442351468B3BB14642 /* EntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB90EF90AC536507C2AD7E3 /* EntryDetailView.swift */; };
+		480E54B69F99809562E1CF4B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC1E0C48256C7CCA3A8208 /* NotificationService.swift */; };
+		4957133CFC41D098ACF9D628 /* ImportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D226CCF2CC6250F4E8D28EE /* ImportService.swift */; };
+		4B579B89BA6FBD4E21BC76A6 /* WidgetSnapshotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB619DB35579C8B038221278 /* WidgetSnapshotService.swift */; };
+		531779BADCEECDD50E17EDA7 /* DayvellaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25B99944A0CCD570C982DC4 /* DayvellaApp.swift */; };
+		639FF82907CBC916601ABBA5 /* DayvellaWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6A36D43385927AA4BAC82530 /* DayvellaWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		653241DC0642AEE3BC9DE4FE /* AppReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F15366C085588B7A048727 /* AppReviewManager.swift */; };
+		6D9C74A0D250D3713F3FBCEB /* TimeZone+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B95CB0F6F585C934DD5DCBC /* TimeZone+List.swift */; };
+		6E6EB3052528EB7B0AA696E6 /* EntryTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2661697E0A8F93CD9B56CF /* EntryTemplate.swift */; };
+		72405CF168D5E3531F4B7A0A /* CardShareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69602D53715DD7DDC9711FC6 /* CardShareService.swift */; };
+		884F2D214D05A0BB0A659C10 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6130CB267CB8304D76A741D /* SettingsView.swift */; };
+		8AC17B481C4BD65895BF3C7D /* CardNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D59F94D4A2808E3B615F7A0 /* CardNumberView.swift */; };
+		8FFEA807C3DE700CDAD3C58E /* sample_import.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CED453F57B60FD7A2AB4596 /* sample_import.json */; };
+		916275B72FE85132FCD9975A /* DayvellaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D627FA807045DCBE9A43D5F /* DayvellaWidget.swift */; };
+		9A0CE4B759DECB9549A5965B /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13AD2E3DC543289BB9104C8 /* DateFormatters.swift */; };
+		9FDA05B3E426BFF9C8E546AC /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207B93FE850AE2FAF3C3628 /* ExportService.swift */; };
+		A08A12C00B531021739B02D1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7C92A0E245F518B93725E /* HomeView.swift */; };
+		A9C6C053BF4862D72B4D247B /* EntryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D279F2F080890BD57870C9 /* EntryStore.swift */; };
+		AA5739035A1E899E0DE1175B /* EntryListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45903742960A4FE7AB603F66 /* EntryListItemView.swift */; };
+		B8DC686DFB995E8CC58CCA21 /* ClearAllDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E022BF094D1A41C407FAD8 /* ClearAllDataView.swift */; };
+		B8ECD56BF2AEED24C8A62FAA /* TrendingCardPalettes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DC02E9C857CA79802CFD9 /* TrendingCardPalettes.swift */; };
+		C587FAB06D5DE251E12D60C2 /* ImportSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2EA3083FD904E4C8E61B63 /* ImportSummaryView.swift */; };
+		CC1F21DC4C617492B78227C9 /* OutOfRangeBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601CF32D1A5197DD1362E01F /* OutOfRangeBehavior.swift */; };
+		D51AFEE5599AAC32B96A0E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28751477542605FDF6CBDEA1 /* Assets.xcassets */; };
+		DD37E305A8F67DA6D8DE29B1 /* EntryWorkspaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE23EC837E09F6F1B87A39E /* EntryWorkspaceTests.swift */; };
+		DEC3F280CAAEEFE8195A8266 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2710A08002675D536742082B /* AppTabView.swift */; };
+		E13484B63F2A413B63243546 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E27A5D449677BC07357AD022 /* Localizable.xcstrings */; };
+		E4BBCD1EC4B9994C06ACF7DB /* Bundle+AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF2B5323ECF077CC1D5A254 /* Bundle+AppInfo.swift */; };
+		E54391102F5F56E6A140152F /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D88DF1D1C52481D0C0E50 /* Entry.swift */; };
+		E96597B7BB626525BFC63B2A /* DayCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4ECDE3C9174514DBA4D2A7 /* DayCounter.swift */; };
+		E9B1B110C0EC4238A1CD32DE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F66496C6DA1E477DA959BAD3 /* Localizable.xcstrings */; };
+		EC29C8A9A63BB936D56B91FF /* EntryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C264BABEE85AE5D92AD48 /* EntryCardView.swift */; };
+		EE52A29443229F05D48DEFCF /* CardTypeTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F73515C37FCF4333222A23 /* CardTypeTag.swift */; };
+		F2F99969594C1C69961FDB32 /* DynamicTypeSize+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729087CA13431194DF265135 /* DynamicTypeSize+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		86E71AB23874DB02648D32A2 /* PBXContainerItemProxy */ = {
+		3FBAE199781C52A02ED7604D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F2C1D367E2825B2A240C6C7B /* Project object */;
+			containerPortal = 91048C31D53B47AA51F1BC36 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5309074F40BEDCDFDBB3D66E;
+			remoteGlobalIDString = A7B5B70284B737A99BAC68F0;
 			remoteInfo = DayvellaWidget;
+		};
+		42C9AFE0D6B71D352866D974 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91048C31D53B47AA51F1BC36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FD0C54D50902B168E8752BE;
+			remoteInfo = Dayvella;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9609E38787BADFBB2CBB7481 /* Embed Foundation Extensions */ = {
+		DB9B236469958BB1C3B68E6E /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				1BEB4D0B9010B04E72BAD29D /* DayvellaWidget.appex in Embed Foundation Extensions */,
+				639FF82907CBC916601ABBA5 /* DayvellaWidget.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,203 +85,251 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1AEED858CF0CF41994E702A7 /* TimeZone+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+List.swift"; sourceTree = "<group>"; };
-		1DD6BBDC3CDA11329F49B7E2 /* EntrySnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrySnapshot.swift; sourceTree = "<group>"; };
-		1E089659B3A2BBA5A651D04B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		26F3E66F1114E4F6E748C524 /* EntryListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListItemView.swift; sourceTree = "<group>"; };
-		2B1A213A8B1FB52483C17C06 /* EntryTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTemplate.swift; sourceTree = "<group>"; };
-		2FC97213DCDA130E98BAE536 /* EntryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryStore.swift; sourceTree = "<group>"; };
-		306808217ADDEDBF418DE3BE /* EntryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryType.swift; sourceTree = "<group>"; };
-		30AD925B8A0CD79750570DA4 /* TrendingCardPalettes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCardPalettes.swift; sourceTree = "<group>"; };
-		34C7D7A70F227FED065D49E2 /* DynamicTypeSize+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DynamicTypeSize+Helpers.swift"; sourceTree = "<group>"; };
-		390F15CD2FF90A8FA9BABDF6 /* DayvellaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayvellaApp.swift; sourceTree = "<group>"; };
-		3C7F8CC072E5C6404E2B1F9A /* ImportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportService.swift; sourceTree = "<group>"; };
-		47BF702162D874206A243DF8 /* TimeZonePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonePickerView.swift; sourceTree = "<group>"; };
-		48FE92689B863F19FC59715B /* EntryEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryEditView.swift; sourceTree = "<group>"; };
-		492883AF3AAC6986D1BE8EAF /* DayvellaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayvellaWidget.swift; sourceTree = "<group>"; };
-		64D0367C006C6265A24BBAA5 /* ImportSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportSummaryView.swift; sourceTree = "<group>"; };
-		65C7FE5261227443151FEDEF /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
-		6A11402023FDA87BF0A21E9E /* DayCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCounter.swift; sourceTree = "<group>"; };
-		6BB00BF23F5BE953CEBE471E /* SearchTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabView.swift; sourceTree = "<group>"; };
-		740CF0839A0872F6E4C3966E /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
-		779EE8DFEF18AED6BA784DFF /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
-		7A881492F2277995D05C62DE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		8847A4D0CE2511AFE26789FB /* EntryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCardView.swift; sourceTree = "<group>"; };
-		8C86046BAEBB0F7573C44FD9 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
-		8EE5A418B7D6F6CB64CE9271 /* ClearAllDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearAllDataView.swift; sourceTree = "<group>"; };
-		958B285290C629212BE26F5D /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
-		B42E294CB902DEFD507BD4E4 /* Dayvella.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Dayvella.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B93C31568C37A2F93F095EA3 /* ImportExportGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportGuideView.swift; sourceTree = "<group>"; };
-		BA3CF8DBB59EA6223354F8A1 /* CardShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardShareService.swift; sourceTree = "<group>"; };
-		BB25532D47431182B5F5EFF9 /* OutOfRangeBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutOfRangeBehavior.swift; sourceTree = "<group>"; };
-		BF3E4948E1D0DE9DCC25083D /* sample_import.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_import.json; sourceTree = "<group>"; };
-		C874EFC6AC0E1D7B3D11327B /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
-		C92C61898E935C4D9345CD00 /* AppReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewManager.swift; sourceTree = "<group>"; };
-		D05E981AE786399B16AED20D /* WidgetSnapshotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSnapshotService.swift; sourceTree = "<group>"; };
-		D5C1F47BA17AA109788DAF35 /* SyncSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncSnapshot.swift; sourceTree = "<group>"; };
-		DA7A6D562D5BDB8D3EE369A2 /* CardNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNumberView.swift; sourceTree = "<group>"; };
-		E29DDBC7FA5E791F1AC27729 /* CardTypeTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeTag.swift; sourceTree = "<group>"; };
-		E3A99E6AE9270B42CF811BA3 /* Bundle+AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+AppInfo.swift"; sourceTree = "<group>"; };
-		E698A3140841C97558734CAC /* EntryDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDraft.swift; sourceTree = "<group>"; };
-		E7AD9DD012684564FBC2D746 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		E9EA090DB851ABC1C7182C28 /* DayvellaWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = DayvellaWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7BF092067A1046E2EE4DDCB /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
-		FC4B30342EB2D7F00D9CC573 /* RepeatRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatRule.swift; sourceTree = "<group>"; };
+		01DC1E0C48256C7CCA3A8208 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		0207B93FE850AE2FAF3C3628 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		097399F37D0870986A3E1C3E /* RepeatRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatRule.swift; sourceTree = "<group>"; };
+		0CED453F57B60FD7A2AB4596 /* sample_import.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_import.json; sourceTree = "<group>"; };
+		1B95CB0F6F585C934DD5DCBC /* TimeZone+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+List.swift"; sourceTree = "<group>"; };
+		1F39914743F70473C9B7DC92 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		221257C753E157C31E0C6EC5 /* SyncSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncSnapshot.swift; sourceTree = "<group>"; };
+		236B1776F5A5EAB52B53E491 /* EntrySnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrySnapshot.swift; sourceTree = "<group>"; };
+		2710A08002675D536742082B /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		28751477542605FDF6CBDEA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AF2B5323ECF077CC1D5A254 /* Bundle+AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+AppInfo.swift"; sourceTree = "<group>"; };
+		2DC7C92A0E245F518B93725E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		37D279F2F080890BD57870C9 /* EntryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryStore.swift; sourceTree = "<group>"; };
+		38E022BF094D1A41C407FAD8 /* ClearAllDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearAllDataView.swift; sourceTree = "<group>"; };
+		39DFAD4D0A490881E8FEB7B6 /* EntryEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryEditView.swift; sourceTree = "<group>"; };
+		3BDD9EB4654AE289F9905736 /* EntryDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDraft.swift; sourceTree = "<group>"; };
+		3D59F94D4A2808E3B615F7A0 /* CardNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardNumberView.swift; sourceTree = "<group>"; };
+		3D627FA807045DCBE9A43D5F /* DayvellaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayvellaWidget.swift; sourceTree = "<group>"; };
+		41D7BB5CEA2310CCC2D5E1E3 /* Dayvella.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Dayvella.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42415A5C4E2E0057E7385038 /* DayvellaUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DayvellaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BA07DA1D877193E42E19A3 /* EntryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryType.swift; sourceTree = "<group>"; };
+		45903742960A4FE7AB603F66 /* EntryListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListItemView.swift; sourceTree = "<group>"; };
+		579D88DF1D1C52481D0C0E50 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		5C2DC02E9C857CA79802CFD9 /* TrendingCardPalettes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCardPalettes.swift; sourceTree = "<group>"; };
+		5D4ECDE3C9174514DBA4D2A7 /* DayCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCounter.swift; sourceTree = "<group>"; };
+		601CF32D1A5197DD1362E01F /* OutOfRangeBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutOfRangeBehavior.swift; sourceTree = "<group>"; };
+		69602D53715DD7DDC9711FC6 /* CardShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardShareService.swift; sourceTree = "<group>"; };
+		6A36D43385927AA4BAC82530 /* DayvellaWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = DayvellaWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE23EC837E09F6F1B87A39E /* EntryWorkspaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryWorkspaceTests.swift; sourceTree = "<group>"; };
+		729087CA13431194DF265135 /* DynamicTypeSize+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DynamicTypeSize+Helpers.swift"; sourceTree = "<group>"; };
+		82F73515C37FCF4333222A23 /* CardTypeTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeTag.swift; sourceTree = "<group>"; };
+		9D226CCF2CC6250F4E8D28EE /* ImportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportService.swift; sourceTree = "<group>"; };
+		AC2EA3083FD904E4C8E61B63 /* ImportSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportSummaryView.swift; sourceTree = "<group>"; };
+		B0F15366C085588B7A048727 /* AppReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewManager.swift; sourceTree = "<group>"; };
+		D13AD2E3DC543289BB9104C8 /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
+		D6130CB267CB8304D76A741D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DB619DB35579C8B038221278 /* WidgetSnapshotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSnapshotService.swift; sourceTree = "<group>"; };
+		DFB90EF90AC536507C2AD7E3 /* EntryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailView.swift; sourceTree = "<group>"; };
+		E25B99944A0CCD570C982DC4 /* DayvellaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayvellaApp.swift; sourceTree = "<group>"; };
+		E27A5D449677BC07357AD022 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		E28B41E9C5D408EDBEA3907E /* TimeZonePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonePickerView.swift; sourceTree = "<group>"; };
+		EC92F1C9BD9A5C6F4E97A423 /* ImportExportGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportGuideView.swift; sourceTree = "<group>"; };
+		EF7D7234D25FB1E8055B110F /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		F52C264BABEE85AE5D92AD48 /* EntryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCardView.swift; sourceTree = "<group>"; };
+		F66496C6DA1E477DA959BAD3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		FC2661697E0A8F93CD9B56CF /* EntryTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		1314A7171BF96E546E55B6D3 /* Search */ = {
+		1142B3E56B0AB41C294CBA9D /* Dayvella */ = {
 			isa = PBXGroup;
 			children = (
-				6BB00BF23F5BE953CEBE471E /* SearchTabView.swift */,
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		18397BC23BE95875CED1502C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BF3E4948E1D0DE9DCC25083D /* sample_import.json */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		2472029F755F5D7EA7139CFE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8C86046BAEBB0F7573C44FD9 /* Entry.swift */,
-				E698A3140841C97558734CAC /* EntryDraft.swift */,
-				1DD6BBDC3CDA11329F49B7E2 /* EntrySnapshot.swift */,
-				2B1A213A8B1FB52483C17C06 /* EntryTemplate.swift */,
-				306808217ADDEDBF418DE3BE /* EntryType.swift */,
-				BB25532D47431182B5F5EFF9 /* OutOfRangeBehavior.swift */,
-				FC4B30342EB2D7F00D9CC573 /* RepeatRule.swift */,
-				D5C1F47BA17AA109788DAF35 /* SyncSnapshot.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		46A172219EF5CFB14238BF5A /* DayvellaWidget */ = {
-			isa = PBXGroup;
-			children = (
-				492883AF3AAC6986D1BE8EAF /* DayvellaWidget.swift */,
-			);
-			path = DayvellaWidget;
-			sourceTree = "<group>";
-		};
-		5E59E68CBEEF2CA3956B0BC0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				65C7FE5261227443151FEDEF /* AppTabView.swift */,
-				8847A4D0CE2511AFE26789FB /* EntryCardView.swift */,
-				48FE92689B863F19FC59715B /* EntryEditView.swift */,
-				E7AD9DD012684564FBC2D746 /* HomeView.swift */,
-				70DAC9CDEB50952570337D51 /* Components */,
-				1314A7171BF96E546E55B6D3 /* Search */,
-				6ADD3EC24B03B86F6D80C6F4 /* Settings */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		6ADD3EC24B03B86F6D80C6F4 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				8EE5A418B7D6F6CB64CE9271 /* ClearAllDataView.swift */,
-				B93C31568C37A2F93F095EA3 /* ImportExportGuideView.swift */,
-				7A881492F2277995D05C62DE /* SettingsView.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		70DAC9CDEB50952570337D51 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				DA7A6D562D5BDB8D3EE369A2 /* CardNumberView.swift */,
-				E29DDBC7FA5E791F1AC27729 /* CardTypeTag.swift */,
-				26F3E66F1114E4F6E748C524 /* EntryListItemView.swift */,
-				64D0367C006C6265A24BBAA5 /* ImportSummaryView.swift */,
-				C874EFC6AC0E1D7B3D11327B /* ShareSheet.swift */,
-				47BF702162D874206A243DF8 /* TimeZonePickerView.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		85DE5FDDC719FC40B56BE06C /* Dayvella */ = {
-			isa = PBXGroup;
-			children = (
-				1E089659B3A2BBA5A651D04B /* Assets.xcassets */,
-				390F15CD2FF90A8FA9BABDF6 /* DayvellaApp.swift */,
-				2472029F755F5D7EA7139CFE /* Models */,
-				18397BC23BE95875CED1502C /* Resources */,
-				B5DBB7CD0A843AF2A7B41585 /* Services */,
-				BA598F20DE3B84F3BF230978 /* Store */,
-				D00C0E1CC97BFE53E8C52020 /* Utilities */,
-				5E59E68CBEEF2CA3956B0BC0 /* Views */,
+				28751477542605FDF6CBDEA1 /* Assets.xcassets */,
+				E25B99944A0CCD570C982DC4 /* DayvellaApp.swift */,
+				E27A5D449677BC07357AD022 /* Localizable.xcstrings */,
+				91F3C48F59B896E5B0CFF881 /* Models */,
+				D58A2A00E20E3C76BEA1939B /* Resources */,
+				3A4710CD4B3F2AB0671431A1 /* Services */,
+				8879B9BF52DB79D549B63C66 /* Store */,
+				25BA5A21B056BEC53F619990 /* Utilities */,
+				C1E9FFA44E0BA802A8C4A656 /* Views */,
 			);
 			path = Dayvella;
 			sourceTree = "<group>";
 		};
-		B5DBB7CD0A843AF2A7B41585 /* Services */ = {
+		25BA5A21B056BEC53F619990 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				BA3CF8DBB59EA6223354F8A1 /* CardShareService.swift */,
-				6A11402023FDA87BF0A21E9E /* DayCounter.swift */,
-				958B285290C629212BE26F5D /* ExportService.swift */,
-				3C7F8CC072E5C6404E2B1F9A /* ImportService.swift */,
-				F7BF092067A1046E2EE4DDCB /* NotificationService.swift */,
-				D05E981AE786399B16AED20D /* WidgetSnapshotService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		BA598F20DE3B84F3BF230978 /* Store */ = {
-			isa = PBXGroup;
-			children = (
-				2FC97213DCDA130E98BAE536 /* EntryStore.swift */,
-			);
-			path = Store;
-			sourceTree = "<group>";
-		};
-		CF8575988AEB615775BCD74B = {
-			isa = PBXGroup;
-			children = (
-				85DE5FDDC719FC40B56BE06C /* Dayvella */,
-				46A172219EF5CFB14238BF5A /* DayvellaWidget */,
-				F531F808C714424A59F72708 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		D00C0E1CC97BFE53E8C52020 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				C92C61898E935C4D9345CD00 /* AppReviewManager.swift */,
-				E3A99E6AE9270B42CF811BA3 /* Bundle+AppInfo.swift */,
-				779EE8DFEF18AED6BA784DFF /* Color+Hex.swift */,
-				740CF0839A0872F6E4C3966E /* DateFormatters.swift */,
-				34C7D7A70F227FED065D49E2 /* DynamicTypeSize+Helpers.swift */,
-				1AEED858CF0CF41994E702A7 /* TimeZone+List.swift */,
-				30AD925B8A0CD79750570DA4 /* TrendingCardPalettes.swift */,
+				B0F15366C085588B7A048727 /* AppReviewManager.swift */,
+				2AF2B5323ECF077CC1D5A254 /* Bundle+AppInfo.swift */,
+				1F39914743F70473C9B7DC92 /* Color+Hex.swift */,
+				D13AD2E3DC543289BB9104C8 /* DateFormatters.swift */,
+				729087CA13431194DF265135 /* DynamicTypeSize+Helpers.swift */,
+				1B95CB0F6F585C934DD5DCBC /* TimeZone+List.swift */,
+				5C2DC02E9C857CA79802CFD9 /* TrendingCardPalettes.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		F531F808C714424A59F72708 /* Products */ = {
+		3A4710CD4B3F2AB0671431A1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				B42E294CB902DEFD507BD4E4 /* Dayvella.app */,
-				E9EA090DB851ABC1C7182C28 /* DayvellaWidget.appex */,
+				69602D53715DD7DDC9711FC6 /* CardShareService.swift */,
+				5D4ECDE3C9174514DBA4D2A7 /* DayCounter.swift */,
+				0207B93FE850AE2FAF3C3628 /* ExportService.swift */,
+				9D226CCF2CC6250F4E8D28EE /* ImportService.swift */,
+				01DC1E0C48256C7CCA3A8208 /* NotificationService.swift */,
+				DB619DB35579C8B038221278 /* WidgetSnapshotService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		425B5D9CC99304784E517A48 /* DayvellaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CE23EC837E09F6F1B87A39E /* EntryWorkspaceTests.swift */,
+			);
+			name = DayvellaUITests;
+			path = Tests/DayvellaUITests;
+			sourceTree = "<group>";
+		};
+		478197AF233FE5A1CAB573BC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				38E022BF094D1A41C407FAD8 /* ClearAllDataView.swift */,
+				EC92F1C9BD9A5C6F4E97A423 /* ImportExportGuideView.swift */,
+				D6130CB267CB8304D76A741D /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		7B7C596750636133A5AE4EC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41D7BB5CEA2310CCC2D5E1E3 /* Dayvella.app */,
+				42415A5C4E2E0057E7385038 /* DayvellaUITests.xctest */,
+				6A36D43385927AA4BAC82530 /* DayvellaWidget.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8879B9BF52DB79D549B63C66 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				37D279F2F080890BD57870C9 /* EntryStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		91F3C48F59B896E5B0CFF881 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				579D88DF1D1C52481D0C0E50 /* Entry.swift */,
+				3BDD9EB4654AE289F9905736 /* EntryDraft.swift */,
+				236B1776F5A5EAB52B53E491 /* EntrySnapshot.swift */,
+				FC2661697E0A8F93CD9B56CF /* EntryTemplate.swift */,
+				44BA07DA1D877193E42E19A3 /* EntryType.swift */,
+				601CF32D1A5197DD1362E01F /* OutOfRangeBehavior.swift */,
+				097399F37D0870986A3E1C3E /* RepeatRule.swift */,
+				221257C753E157C31E0C6EC5 /* SyncSnapshot.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB272E6E6606FB8F9CFE85CF = {
+			isa = PBXGroup;
+			children = (
+				1142B3E56B0AB41C294CBA9D /* Dayvella */,
+				425B5D9CC99304784E517A48 /* DayvellaUITests */,
+				C211BE07C00ACE46E93F157C /* DayvellaWidget */,
+				7B7C596750636133A5AE4EC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1E9FFA44E0BA802A8C4A656 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2710A08002675D536742082B /* AppTabView.swift */,
+				F52C264BABEE85AE5D92AD48 /* EntryCardView.swift */,
+				DFB90EF90AC536507C2AD7E3 /* EntryDetailView.swift */,
+				39DFAD4D0A490881E8FEB7B6 /* EntryEditView.swift */,
+				2DC7C92A0E245F518B93725E /* HomeView.swift */,
+				DF5936D4C15372AE79AD83C4 /* Components */,
+				478197AF233FE5A1CAB573BC /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C211BE07C00ACE46E93F157C /* DayvellaWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3D627FA807045DCBE9A43D5F /* DayvellaWidget.swift */,
+				F66496C6DA1E477DA959BAD3 /* Localizable.xcstrings */,
+			);
+			path = DayvellaWidget;
+			sourceTree = "<group>";
+		};
+		D58A2A00E20E3C76BEA1939B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0CED453F57B60FD7A2AB4596 /* sample_import.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF5936D4C15372AE79AD83C4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3D59F94D4A2808E3B615F7A0 /* CardNumberView.swift */,
+				82F73515C37FCF4333222A23 /* CardTypeTag.swift */,
+				45903742960A4FE7AB603F66 /* EntryListItemView.swift */,
+				AC2EA3083FD904E4C8E61B63 /* ImportSummaryView.swift */,
+				EF7D7234D25FB1E8055B110F /* ShareSheet.swift */,
+				E28B41E9C5D408EDBEA3907E /* TimeZonePickerView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5309074F40BEDCDFDBB3D66E /* DayvellaWidget */ = {
+		1FD0C54D50902B168E8752BE /* Dayvella */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBA90A8B7149BD43EF9A36D6 /* Build configuration list for PBXNativeTarget "DayvellaWidget" */;
+			buildConfigurationList = 86A19E0B33F902F6B4BFAE0C /* Build configuration list for PBXNativeTarget "Dayvella" */;
 			buildPhases = (
-				3DC7346E2718945D5DA7D17D /* Sources */,
+				79EB3BE91CA9B2C6D8125799 /* Sources */,
+				E60F4661E10580A410CA8D63 /* Resources */,
+				DB9B236469958BB1C3B68E6E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61F5A53E1B94099D94A00E16 /* PBXTargetDependency */,
+			);
+			name = Dayvella;
+			packageProductDependencies = (
+			);
+			productName = Dayvella;
+			productReference = 41D7BB5CEA2310CCC2D5E1E3 /* Dayvella.app */;
+			productType = "com.apple.product-type.application";
+		};
+		799221B970856E8D38936AE0 /* DayvellaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3855AF045DF116B0508EA90C /* Build configuration list for PBXNativeTarget "DayvellaUITests" */;
+			buildPhases = (
+				3B21E3633E37785E5310D28B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A492DC2E1227C71BD772FAE /* PBXTargetDependency */,
+			);
+			name = DayvellaUITests;
+			packageProductDependencies = (
+			);
+			productName = DayvellaUITests;
+			productReference = 42415A5C4E2E0057E7385038 /* DayvellaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A7B5B70284B737A99BAC68F0 /* DayvellaWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A069CB5B67C2D01D91860D5 /* Build configuration list for PBXNativeTarget "DayvellaWidget" */;
+			buildPhases = (
+				F1745DCC0FCEDAC35EA7BB79 /* Sources */,
+				5BC5044A9BAC35A9756A916C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -281,253 +339,163 @@
 			packageProductDependencies = (
 			);
 			productName = DayvellaWidget;
-			productReference = E9EA090DB851ABC1C7182C28 /* DayvellaWidget.appex */;
+			productReference = 6A36D43385927AA4BAC82530 /* DayvellaWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
-		};
-		A3B210B7915297CB519620DB /* Dayvella */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 70B600BF56018EE2B26C77E1 /* Build configuration list for PBXNativeTarget "Dayvella" */;
-			buildPhases = (
-				AB58E38D0A13193E42F45D85 /* Sources */,
-				7BE6088A9279425A9725E7C1 /* Resources */,
-				9609E38787BADFBB2CBB7481 /* Embed Foundation Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				27B5C2B70114BFAC043F9B43 /* PBXTargetDependency */,
-			);
-			name = Dayvella;
-			packageProductDependencies = (
-			);
-			productName = Dayvella;
-			productReference = B42E294CB902DEFD507BD4E4 /* Dayvella.app */;
-			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F2C1D367E2825B2A240C6C7B /* Project object */ = {
+		91048C31D53B47AA51F1BC36 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					5309074F40BEDCDFDBB3D66E = {
+					1FD0C54D50902B168E8752BE = {
 						DevelopmentTeam = YPV49M8592;
 						ProvisioningStyle = Automatic;
 					};
-					A3B210B7915297CB519620DB = {
+					799221B970856E8D38936AE0 = {
+						DevelopmentTeam = YPV49M8592;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1FD0C54D50902B168E8752BE;
+					};
+					A7B5B70284B737A99BAC68F0 = {
 						DevelopmentTeam = YPV49M8592;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = EA65FEC93ECFD3F41F6323C5 /* Build configuration list for PBXProject "Dayvella" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 5BC4ABC2D7758282A032EE31 /* Build configuration list for PBXProject "Dayvella" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
+				de,
 				en,
+				es,
+				fr,
+				it,
+				ja,
+				ko,
+				"pt-BR",
+				ru,
+				vi,
+				"zh-Hans",
 			);
-			mainGroup = CF8575988AEB615775BCD74B;
+			mainGroup = BB272E6E6606FB8F9CFE85CF;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
+			productRefGroup = 7B7C596750636133A5AE4EC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A3B210B7915297CB519620DB /* Dayvella */,
-				5309074F40BEDCDFDBB3D66E /* DayvellaWidget */,
+				1FD0C54D50902B168E8752BE /* Dayvella */,
+				A7B5B70284B737A99BAC68F0 /* DayvellaWidget */,
+				799221B970856E8D38936AE0 /* DayvellaUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7BE6088A9279425A9725E7C1 /* Resources */ = {
+		5BC5044A9BAC35A9756A916C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DFA33E55A6B8DE3D28E21DF /* Assets.xcassets in Resources */,
-				50D15A8DEEAE056759A25AA4 /* sample_import.json in Resources */,
+				E9B1B110C0EC4238A1CD32DE /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60F4661E10580A410CA8D63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D51AFEE5599AAC32B96A0E1A /* Assets.xcassets in Resources */,
+				E13484B63F2A413B63243546 /* Localizable.xcstrings in Resources */,
+				8FFEA807C3DE700CDAD3C58E /* sample_import.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3DC7346E2718945D5DA7D17D /* Sources */ = {
+		3B21E3633E37785E5310D28B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF0852FF8C0E2B24F83D33ED /* DayvellaWidget.swift in Sources */,
+				DD37E305A8F67DA6D8DE29B1 /* EntryWorkspaceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB58E38D0A13193E42F45D85 /* Sources */ = {
+		79EB3BE91CA9B2C6D8125799 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03AA8FB9BF3537CF4364659D /* AppReviewManager.swift in Sources */,
-				CA9075F0A65AA244BD899982 /* AppTabView.swift in Sources */,
-				565F5606F60C067B73EAB556 /* Bundle+AppInfo.swift in Sources */,
-				FEDEA89D1A78697BBD40C448 /* CardNumberView.swift in Sources */,
-				87F0032C399D66C90C7AA1AF /* CardShareService.swift in Sources */,
-				959F70ADBD7EA0B6B23D31B4 /* CardTypeTag.swift in Sources */,
-				3348CD0CBABE5AF03F2ED811 /* ClearAllDataView.swift in Sources */,
-				52ABAB173B7DDF3568724120 /* Color+Hex.swift in Sources */,
-				B8A292EB6FC2FFF46CF3196C /* DayvellaApp.swift in Sources */,
-				F82932327EB8080BBEE4FDAA /* DateFormatters.swift in Sources */,
-				BDBA14237FFFC71EB8767AD8 /* DayCounter.swift in Sources */,
-				AAD9D6CBDDA17B17C45EF574 /* DynamicTypeSize+Helpers.swift in Sources */,
-				B3DA59049DB8F9C01D7C4805 /* Entry.swift in Sources */,
-				AE58D95BBD0B0838152A1305 /* EntryCardView.swift in Sources */,
-				8E4044FD8CE55F0BF5C16CBC /* EntryDraft.swift in Sources */,
-				C80B229DDB8C9709A314C525 /* EntryEditView.swift in Sources */,
-				506DF23CD37F101136644BA6 /* EntryListItemView.swift in Sources */,
-				ED06BBC79BA6BDC6A30AC4F7 /* EntrySnapshot.swift in Sources */,
-				671F202992B6C344C98BE813 /* EntryStore.swift in Sources */,
-				0A993AFF7354AAF7CB77211A /* EntryTemplate.swift in Sources */,
-				A7B6B5DBD370447E48A233AA /* EntryType.swift in Sources */,
-				B779E9D615D4E5BE00B16E17 /* ExportService.swift in Sources */,
-				5B11F36B89F91102F72DB55F /* HomeView.swift in Sources */,
-				4AD19B01EF0E0B911506349B /* ImportExportGuideView.swift in Sources */,
-				F2D8FC73FF7FEC56AA76C6DC /* ImportService.swift in Sources */,
-				CC77D1A2E1A26626B7905F8A /* ImportSummaryView.swift in Sources */,
-				3D1A0C287F9DD0437CD29882 /* NotificationService.swift in Sources */,
-				AFAE1D69E43E1D706A04CF63 /* OutOfRangeBehavior.swift in Sources */,
-				30BA663880CB61DD0B334E03 /* RepeatRule.swift in Sources */,
-				196637E2AA916E4390C885CA /* SearchTabView.swift in Sources */,
-				39CDEEE7FF7E82D53CF81C3D /* SettingsView.swift in Sources */,
-				AE734899757BDBE20C4FBE39 /* ShareSheet.swift in Sources */,
-				2E5474D8DC72449574B779B4 /* SyncSnapshot.swift in Sources */,
-				3BA5E66D07929CDC696875A4 /* TimeZone+List.swift in Sources */,
-				E70033DC7254765D5CB1D5BF /* TimeZonePickerView.swift in Sources */,
-				4B517EEEC2BD6414E8FA7EDF /* TrendingCardPalettes.swift in Sources */,
-				993879E37F842BD49412A999 /* WidgetSnapshotService.swift in Sources */,
+				653241DC0642AEE3BC9DE4FE /* AppReviewManager.swift in Sources */,
+				DEC3F280CAAEEFE8195A8266 /* AppTabView.swift in Sources */,
+				E4BBCD1EC4B9994C06ACF7DB /* Bundle+AppInfo.swift in Sources */,
+				8AC17B481C4BD65895BF3C7D /* CardNumberView.swift in Sources */,
+				72405CF168D5E3531F4B7A0A /* CardShareService.swift in Sources */,
+				EE52A29443229F05D48DEFCF /* CardTypeTag.swift in Sources */,
+				B8DC686DFB995E8CC58CCA21 /* ClearAllDataView.swift in Sources */,
+				36B17B7B5587B34AEDC21234 /* Color+Hex.swift in Sources */,
+				9A0CE4B759DECB9549A5965B /* DateFormatters.swift in Sources */,
+				E96597B7BB626525BFC63B2A /* DayCounter.swift in Sources */,
+				531779BADCEECDD50E17EDA7 /* DayvellaApp.swift in Sources */,
+				F2F99969594C1C69961FDB32 /* DynamicTypeSize+Helpers.swift in Sources */,
+				E54391102F5F56E6A140152F /* Entry.swift in Sources */,
+				EC29C8A9A63BB936D56B91FF /* EntryCardView.swift in Sources */,
+				467B43442351468B3BB14642 /* EntryDetailView.swift in Sources */,
+				00986E46E48DCF5D8239E4A7 /* EntryDraft.swift in Sources */,
+				08BE50CAF1EE13F4B9AAAA7C /* EntryEditView.swift in Sources */,
+				AA5739035A1E899E0DE1175B /* EntryListItemView.swift in Sources */,
+				13FDBAB20892A3506D485178 /* EntrySnapshot.swift in Sources */,
+				A9C6C053BF4862D72B4D247B /* EntryStore.swift in Sources */,
+				6E6EB3052528EB7B0AA696E6 /* EntryTemplate.swift in Sources */,
+				2CBCDC4FD2A91E8F1EE469C7 /* EntryType.swift in Sources */,
+				9FDA05B3E426BFF9C8E546AC /* ExportService.swift in Sources */,
+				A08A12C00B531021739B02D1 /* HomeView.swift in Sources */,
+				1D69FBC23359D6F4059E25EE /* ImportExportGuideView.swift in Sources */,
+				4957133CFC41D098ACF9D628 /* ImportService.swift in Sources */,
+				C587FAB06D5DE251E12D60C2 /* ImportSummaryView.swift in Sources */,
+				480E54B69F99809562E1CF4B /* NotificationService.swift in Sources */,
+				CC1F21DC4C617492B78227C9 /* OutOfRangeBehavior.swift in Sources */,
+				2090BEC0ECC25D74E9C6B77B /* RepeatRule.swift in Sources */,
+				884F2D214D05A0BB0A659C10 /* SettingsView.swift in Sources */,
+				46122CB5DFD388375E523277 /* ShareSheet.swift in Sources */,
+				2F7A73524295D8418F70AD1F /* SyncSnapshot.swift in Sources */,
+				6D9C74A0D250D3713F3FBCEB /* TimeZone+List.swift in Sources */,
+				19433183A4F9A7ED6A9F735D /* TimeZonePickerView.swift in Sources */,
+				B8ECD56BF2AEED24C8A62FAA /* TrendingCardPalettes.swift in Sources */,
+				4B579B89BA6FBD4E21BC76A6 /* WidgetSnapshotService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1745DCC0FCEDAC35EA7BB79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916275B72FE85132FCD9975A /* DayvellaWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		27B5C2B70114BFAC043F9B43 /* PBXTargetDependency */ = {
+		0A492DC2E1227C71BD772FAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5309074F40BEDCDFDBB3D66E /* DayvellaWidget */;
-			targetProxy = 86E71AB23874DB02648D32A2 /* PBXContainerItemProxy */;
+			target = 1FD0C54D50902B168E8752BE /* Dayvella */;
+			targetProxy = 42C9AFE0D6B71D352866D974 /* PBXContainerItemProxy */;
+		};
+		61F5A53E1B94099D94A00E16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7B5B70284B737A99BAC68F0 /* DayvellaWidget */;
+			targetProxy = 3FBAE199781C52A02ED7604D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		161EDA742A91A51E551AB0F7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = DayvellaWidget/DayvellaWidget.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 119;
-				INFOPLIST_FILE = DayvellaWidget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xnu.countmydays.widget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		3DED13EE4B750BEBF6B12B01 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = YPV49M8592;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		5BAD7C4532BD395F3183C9AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Dayvella/Dayvella.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 119;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Dayvella/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Dayvella;
-				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.xnu.countmydays;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		96365C5D03F787902FC4DB97 /* Debug */ = {
+		22F28E2D86F4749175A97FE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -585,7 +553,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -596,7 +564,7 @@
 			};
 			name = Debug;
 		};
-		BEAD9D89CC927A78F2E10F98 /* Debug */ = {
+		2A6BCE4A062303025BEC6E63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -604,7 +572,7 @@
 				CODE_SIGN_ENTITLEMENTS = Dayvella/Dayvella.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 119;
+				CURRENT_PROJECT_VERSION = 121;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Dayvella/Info.plist;
@@ -617,7 +585,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xnu.countmydays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -625,15 +593,15 @@
 			};
 			name = Debug;
 		};
-		F7D3533404C88E4443710D1A /* Debug */ = {
+		2BC7CFBF47C4A1A1F7D5BC75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = DayvellaWidget/DayvellaWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 119;
+				CURRENT_PROJECT_VERSION = 121;
 				INFOPLIST_FILE = DayvellaWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xnu.countmydays.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -642,37 +610,190 @@
 			};
 			name = Debug;
 		};
+		52DE9AE5E00ED960556FA381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xnu.countmydays.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dayvella;
+			};
+			name = Release;
+		};
+		6DB4007AC85CA3416AD826B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DayvellaWidget/DayvellaWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 121;
+				INFOPLIST_FILE = DayvellaWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xnu.countmydays.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8876E55D08B6BC4A0CA5B366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YPV49M8592;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E0C3532A3B28F93C001E558E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xnu.countmydays.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dayvella;
+			};
+			name = Debug;
+		};
+		F7F72345EC16843E97A884B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dayvella/Dayvella.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 121;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dayvella/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dayvella;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xnu.countmydays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		70B600BF56018EE2B26C77E1 /* Build configuration list for PBXNativeTarget "Dayvella" */ = {
+		3855AF045DF116B0508EA90C /* Build configuration list for PBXNativeTarget "DayvellaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEAD9D89CC927A78F2E10F98 /* Debug */,
-				5BAD7C4532BD395F3183C9AB /* Release */,
+				E0C3532A3B28F93C001E558E /* Debug */,
+				52DE9AE5E00ED960556FA381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		DBA90A8B7149BD43EF9A36D6 /* Build configuration list for PBXNativeTarget "DayvellaWidget" */ = {
+		4A069CB5B67C2D01D91860D5 /* Build configuration list for PBXNativeTarget "DayvellaWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7D3533404C88E4443710D1A /* Debug */,
-				161EDA742A91A51E551AB0F7 /* Release */,
+				2BC7CFBF47C4A1A1F7D5BC75 /* Debug */,
+				6DB4007AC85CA3416AD826B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		EA65FEC93ECFD3F41F6323C5 /* Build configuration list for PBXProject "Dayvella" */ = {
+		5BC4ABC2D7758282A032EE31 /* Build configuration list for PBXProject "Dayvella" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				96365C5D03F787902FC4DB97 /* Debug */,
-				3DED13EE4B750BEBF6B12B01 /* Release */,
+				22F28E2D86F4749175A97FE7 /* Debug */,
+				8876E55D08B6BC4A0CA5B366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		86A19E0B33F902F6B4BFAE0C /* Build configuration list for PBXNativeTarget "Dayvella" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A6BCE4A062303025BEC6E63 /* Debug */,
+				F7F72345EC16843E97A884B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F2C1D367E2825B2A240C6C7B /* Project object */;
+	rootObject = 91048C31D53B47AA51F1BC36 /* Project object */;
 }

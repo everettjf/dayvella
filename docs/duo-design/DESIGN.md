@@ -1,4 +1,6 @@
-# Dayvella on iPhone Duo — design proposal
+# Dayvella on iPhone Duo — original design proposal
+
+Implemented in 1.4 (121). See [the implementation report](IMPLEMENTATION.md) for shipped behavior, captures, and validation limits. This document records the original proposal; the report supersedes planned details.
 
 ## Baseline inspected
 

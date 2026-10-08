@@ -11,11 +11,11 @@ enum EntryTemplate: String, CaseIterable, Identifiable {
 
     var title: String {
         switch self {
-        case .birthday: "Birthday"
-        case .anniversary: "Anniversary"
-        case .trip: "Trip"
-        case .exam: "Exam"
-        case .habit: "Habit Days"
+        case .birthday: String(localized: "Birthday")
+        case .anniversary: String(localized: "Anniversary")
+        case .trip: String(localized: "Trip")
+        case .exam: String(localized: "Exam")
+        case .habit: String(localized: "Habit Days")
         }
     }
 
@@ -33,25 +33,25 @@ enum EntryTemplate: String, CaseIterable, Identifiable {
         let today = DayCounter.startOfDay(now, in: timezone)
         switch self {
         case .birthday:
-            return EntryDraft(title: "Birthday", entryType: .countDown,
+            return EntryDraft(title: String(localized: "Birthday"), entryType: .countDown,
                               targetDate: Calendar.current.date(byAdding: .month, value: 1, to: today),
                               repeatRule: .yearly, timezone: timezone, iconEmoji: "🎂",
                               reminderOffsetsDays: [0, 1, 7])
         case .anniversary:
-            return EntryDraft(title: "Anniversary", entryType: .countDown,
+            return EntryDraft(title: String(localized: "Anniversary"), entryType: .countDown,
                               targetDate: Calendar.current.date(byAdding: .month, value: 1, to: today),
                               repeatRule: .yearly, timezone: timezone, iconEmoji: "❤️",
                               reminderOffsetsDays: [0, 1, 7, 30])
         case .trip:
-            return EntryDraft(title: "Trip", entryType: .countDown,
+            return EntryDraft(title: String(localized: "Trip"), entryType: .countDown,
                               targetDate: Calendar.current.date(byAdding: .day, value: 30, to: today),
                               timezone: timezone, iconEmoji: "✈️", reminderOffsetsDays: [0, 1, 7, 30])
         case .exam:
-            return EntryDraft(title: "Exam", entryType: .countDown,
+            return EntryDraft(title: String(localized: "Exam"), entryType: .countDown,
                               targetDate: Calendar.current.date(byAdding: .day, value: 30, to: today),
                               timezone: timezone, iconEmoji: "🎓", reminderOffsetsDays: [0, 1, 3, 7])
         case .habit:
-            return EntryDraft(title: "New Habit", entryType: .countUp, startDate: today,
+            return EntryDraft(title: String(localized: "New Habit"), entryType: .countUp, startDate: today,
                               timezone: timezone, iconEmoji: "🔥", reminderOffsetsDays: [])
         }
     }

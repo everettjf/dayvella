@@ -8,8 +8,8 @@ enum OutOfRangeBehavior: String, Codable, CaseIterable, Identifiable {
 
     var label: String {
         switch self {
-        case .zero: return "Zero"
-        case .freeze: return "Freeze"
+        case .zero: return String(localized: "Zero")
+        case .freeze: return String(localized: "Freeze")
         }
     }
 }

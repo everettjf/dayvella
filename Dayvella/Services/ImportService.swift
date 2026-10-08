@@ -35,22 +35,22 @@ final class ImportService {
             } else {
                 let payload = try decoder.decode(ImportPayload.self, from: data)
                 guard payload.version == 1 else {
-                    rows.append(RowStatus(title: "Invalid Version", state: .skipped("Unsupported import version \(payload.version)")))
+                    rows.append(RowStatus(title: String(localized: "Invalid Version"), state: .skipped(String(localized: "Unsupported import version \(payload.version)"))))
                     return Summary(statuses: rows)
                 }
                 dtos = payload.entries
             }
 
             for dto in dtos {
-                let displayTitle = (dto.title ?? "Untitled").trimmingCharacters(in: .whitespacesAndNewlines)
+                let displayTitle = (dto.title ?? String(localized: "Untitled")).trimmingCharacters(in: .whitespacesAndNewlines)
                 do {
                     let entry = try process(dto)
                     imported.append(entry)
-                    rows.append(RowStatus(title: displayTitle.isEmpty ? "Untitled" : displayTitle, state: .success))
+                    rows.append(RowStatus(title: displayTitle.isEmpty ? String(localized: "Untitled") : displayTitle, state: .success))
                 } catch let error as ImportError {
-                    rows.append(RowStatus(title: displayTitle.isEmpty ? "Untitled" : displayTitle, state: .skipped(error.message)))
+                    rows.append(RowStatus(title: displayTitle.isEmpty ? String(localized: "Untitled") : displayTitle, state: .skipped(error.message)))
                 } catch {
-                    rows.append(RowStatus(title: displayTitle.isEmpty ? "Untitled" : displayTitle, state: .skipped(error.localizedDescription)))
+                    rows.append(RowStatus(title: displayTitle.isEmpty ? String(localized: "Untitled") : displayTitle, state: .skipped(error.localizedDescription)))
                 }
             }
 
@@ -58,7 +58,7 @@ final class ImportService {
                 store.importEntries(imported)
             }
         } catch {
-            rows.append(RowStatus(title: "Import Failed", state: .skipped(error.localizedDescription)))
+            rows.append(RowStatus(title: String(localized: "Import Failed"), state: .skipped(error.localizedDescription)))
         }
 
         return Summary(statuses: rows)
@@ -99,15 +99,15 @@ private extension ImportService {
 
     func process(_ dto: ImportEntryDTO) throws -> Entry {
         let title = (dto.title ?? "").trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !title.isEmpty else { throw ImportError.validation("Title is required") }
-        guard let type = dto.type.flatMap(EntryType.init(rawValue:)) else { throw ImportError.validation("Unsupported type") }
+        guard !title.isEmpty else { throw ImportError.validation(String(localized: "Title is required")) }
+        guard let type = dto.type.flatMap(EntryType.init(rawValue:)) else { throw ImportError.validation(String(localized: "Unsupported type")) }
 
         let timezoneID = dto.timezone?.trimmingCharacters(in: .whitespacesAndNewlines) ?? TimeZone.current.identifier
-        guard let timezone = TimeZone(identifier: timezoneID) else { throw ImportError.validation("Invalid timezone identifier") }
+        guard let timezone = TimeZone(identifier: timezoneID) else { throw ImportError.validation(String(localized: "Invalid timezone identifier")) }
 
         let identifier = dto.id ?? UUID()
         if store.entry(with: identifier) != nil {
-            throw ImportError.duplicate("Entry already exists – skipped")
+            throw ImportError.duplicate(String(localized: "Entry already exists – skipped"))
         }
 
         var entry = Entry(id: identifier, title: title, entryType: type, timezoneID: timezoneID)
@@ -124,11 +124,11 @@ private extension ImportService {
 
         switch type {
         case .countUp:
-            guard let start = dto.start else { throw ImportError.validation("start is required for countUp") }
+            guard let start = dto.start else { throw ImportError.validation(String(localized: "start is required for countUp")) }
             entry.startDate = DayCounter.startOfDay(start, in: timezone)
             entry.targetDate = nil
         case .countDown:
-            guard let target = dto.target else { throw ImportError.validation("target is required for countDown") }
+            guard let target = dto.target else { throw ImportError.validation(String(localized: "target is required for countDown")) }
             entry.targetDate = DayCounter.startOfDay(target, in: timezone)
             entry.startDate = nil
         }

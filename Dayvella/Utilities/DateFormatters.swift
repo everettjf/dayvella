@@ -4,9 +4,9 @@ enum DateFormatters {
     static func cardDateFormatter(for timeZone: TimeZone) -> DateFormatter {
         let formatter = DateFormatter()
         formatter.calendar = Calendar(identifier: .gregorian)
-        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.locale = Locale.current
         formatter.timeZone = timeZone
-        formatter.dateFormat = "yyyy.MM.dd"
+        formatter.setLocalizedDateFormatFromTemplate("yyyyMMMd")
         return formatter
     }
 

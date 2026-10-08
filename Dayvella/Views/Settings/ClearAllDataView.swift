@@ -28,7 +28,7 @@ struct ClearAllDataView: View {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("This will permanently delete all entries, including archived and pinned items.")
                     if entryCount > 0 {
-                        Text("You currently have \(entryCount) entr\(entryCount == 1 ? "y" : "ies").")
+                        Text("You currently have \(entryCount) entries.")
                             .font(.footnote)
                             .foregroundStyle(.secondary)
                     }
@@ -38,7 +38,9 @@ struct ClearAllDataView: View {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Type `delete all` to confirm")
                         .font(.subheadline.weight(.semibold))
-                    TextField("delete all", text: $confirmationText)
+                    TextField(text: $confirmationText, prompt: Text(verbatim: "delete all")) {
+                        Text("Confirmation")
+                    }
                         .textInputAutocapitalization(.never)
                         .disableAutocorrection(true)
                         .textFieldStyle(.roundedBorder)

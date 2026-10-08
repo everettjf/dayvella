@@ -33,6 +33,14 @@ Dayvella is a SwiftUI iOS app for tracking countdowns and cumulative day counts.
 - Quick-start templates for birthdays, anniversaries, trips, exams, and habit tracking.
 - High-resolution card image sharing through the system share sheet.
 
+## Languages
+
+The app and widgets support the same 11 languages as Remoboard: English, Simplified Chinese, Japanese, Korean, German, French, Spanish, Italian, Brazilian Portuguese, Russian, and Vietnamese.
+
+The interface follows the app language selected in iOS Settings (or the device language). Localized dates, template titles, reminders, import diagnostics, and accessibility descriptions are included. User-created titles and notes, JSON field names, serialized enum values, and stable app identifiers remain unchanged.
+
+Run `python3 scripts/validate_localizations.py` to check language coverage, placeholders, plural variants, and import-guide tokens. Pass `--build-dir /tmp/dayvella-i18n` after a simulator build to also check compiler-extracted strings and compiled resources. Run `swift scripts/verify_localization_runtime.swift /tmp/dayvella-i18n` to exercise compiled plural rules and interpolated user text in all languages.
+
 ## Requirements
 - Xcode with iOS Simulator support.
 
@@ -85,3 +93,18 @@ The Dayvella rename preserves the app identity and existing user data:
 - The App Store record remains `6753280745`. Old website routes redirect to `/dayvella/`.
 
 The source folders, Xcode project/scheme, Swift package, app and widget display names now use Dayvella. Do not rename the legacy identifiers above when updating branding.
+
+## Adaptive entry workspace
+
+Version 1.4 (121) uses a native list/detail navigation split. Wide windows keep the date list visible beside the selected detail or editor; narrow windows navigate to the same detail/editor. Selection and in-progress draft values remain owned by the workspace across layout changes. All, Pinned, Archived, and Search maintain independent filtering.
+
+See [implementation and simulator captures](docs/duo-design/IMPLEMENTATION.md). Run `swift test` for the core suite and the `Dayvella` scheme's `DayvellaUITests` on a simulator. Xcode 27.1 was used for Duo verification; the deployment target remains iOS 26.
+
+```sh
+DEVELOPER_DIR=/Applications/Xcode271.app/Contents/Developer xcodebuild \
+  -project Dayvella.xcodeproj -scheme Dayvella \
+  -destination 'platform=iOS Simulator,name=Dayvella Duo Design' \
+  -parallel-testing-enabled NO test
+```
+
+The UI tests use synthetic screenshot entries with iCloud synchronization disabled. Use a dedicated test simulator; the test dataset persists locally between launches.

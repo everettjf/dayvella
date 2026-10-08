@@ -7,8 +7,8 @@ enum EntryType: String, Codable, CaseIterable, Identifiable {
 
     var label: String {
         switch self {
-        case .countUp: return "Cumulative"
-        case .countDown: return "Countdown"
+        case .countUp: return String(localized: "Cumulative")
+        case .countDown: return String(localized: "Countdown")
         }
     }
 }
