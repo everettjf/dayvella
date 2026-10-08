@@ -32,9 +32,9 @@ struct EntryCardView: View {
 
     private var dateLabel: String {
         if snapshot.entryType == .countDown && snapshot.repeatRule != .none {
-            return "Next Target"
+            return String(localized: "Next Target")
         }
-        return snapshot.entryType == .countUp ? "Start Date" : "Target Date"
+        return snapshot.entryType == .countUp ? String(localized: "Start Date") : String(localized: "Target Date")
     }
 
     private var days: Int { DayCounter.days(for: snapshot, now: now) }
@@ -44,48 +44,37 @@ struct EntryCardView: View {
         let formatter = DateFormatters.cardDateFormatter(for: snapshot.timezone)
         let startText = snapshot.rangeStart.map { formatter.string(from: $0) } ?? "--"
         let endText = snapshot.rangeEnd.map { formatter.string(from: $0) } ?? "--"
-        return "Range: \(startText) - \(endText)"
+        return String(localized: "Range: \(startText) - \(endText)")
     }
 
     private var repeatLine: String? {
         guard snapshot.entryType == .countDown, snapshot.repeatRule != .none else { return nil }
-        return "Repeat: \(snapshot.repeatRule.label)"
+        return String(localized: "Repeat: \(snapshot.repeatRule.label)")
     }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            HStack(alignment: .top, spacing: 14) {
-                VStack(alignment: .leading, spacing: 10) {
-                    CardTypeTag(text: snapshot.entryType.label,
-                             tint: accent,
-                             textColorOverride: palette.primaryTextColor)
-                    Text(snapshot.title)
-                        .font(.system(size: 19, weight: .black, design: .monospaced))
-                        .foregroundStyle(titleColor)
-                        .lineLimit(2)
-                        .multilineTextAlignment(.leading)
-                    Text("\(dateLabel): \(dateLine)")
-                        .font(.system(size: 12, weight: .bold, design: .monospaced))
-                        .foregroundStyle(secondaryColor)
-                    if let rangeLine {
-                        Text(rangeLine)
-                            .font(.system(size: 11, weight: .medium, design: .monospaced))
-                            .foregroundStyle(secondaryColor)
-                    }
-                    if let repeatLine {
-                        Text(repeatLine)
-                            .font(.system(size: 11, weight: .medium, design: .monospaced))
-                            .foregroundStyle(secondaryColor)
-                    }
-                }
+            HStack {
+                CardTypeTag(text: snapshot.entryType.label, tint: accent,
+                            textColorOverride: palette.primaryTextColor)
                 Spacer(minLength: 8)
-                VStack(alignment: .trailing, spacing: 6) {
-                    if let emoji = snapshot.iconEmoji, !emoji.isEmpty {
-                        Text(emoji)
-                            .font(.system(size: 32))
-                            .shadow(color: accent.opacity(0.3), radius: 0, x: 1, y: 1)
-                    }
-                    CardNumberView(value: days, label: "Days", color: accent)
+                if let emoji = snapshot.iconEmoji, !emoji.isEmpty {
+                    Text(emoji).font(.title)
+                }
+            }
+            Text(snapshot.title)
+                .font(.system(.title3, design: .rounded, weight: .bold))
+                .foregroundStyle(titleColor)
+                .fixedSize(horizontal: false, vertical: true)
+            ViewThatFits(in: .horizontal) {
+                HStack(alignment: .center, spacing: 16) {
+                    dateMetadata
+                    Spacer(minLength: 0)
+                    CardNumberView(value: days, label: String(localized: "Days"), color: accent)
+                }
+                VStack(alignment: .leading, spacing: 12) {
+                    CardNumberView(value: days, label: String(localized: "Days"), color: accent)
+                    dateMetadata
                 }
             }
             if let notes = snapshot.notes, !notes.isEmpty {
@@ -105,6 +94,17 @@ struct EntryCardView: View {
         .onReceive(timer) { date in
             if updatesLive { now = date }
         }
+    }
+
+    private var dateMetadata: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(dateLabel).font(.caption.weight(.semibold))
+            Text(dateLine).font(.subheadline)
+            if let rangeLine { Text(rangeLine).font(.caption) }
+            if let repeatLine { Text(repeatLine).font(.caption) }
+        }
+        .foregroundStyle(secondaryColor)
+        .fixedSize(horizontal: false, vertical: true)
     }
 
     private var cardBackground: some View {

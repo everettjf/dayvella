@@ -10,10 +10,10 @@ enum RepeatRule: String, Codable, CaseIterable, Identifiable {
 
     var label: String {
         switch self {
-        case .none: return "None"
-        case .yearly: return "Yearly"
-        case .monthly: return "Monthly"
-        case .weekly: return "Weekly"
+        case .none: return String(localized: "None")
+        case .yearly: return String(localized: "Yearly")
+        case .monthly: return String(localized: "Monthly")
+        case .weekly: return String(localized: "Weekly")
         }
     }
 }

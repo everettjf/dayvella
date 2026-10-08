@@ -98,7 +98,7 @@ private struct Provider: TimelineProvider {
 }
 
 private extension WidgetItem {
-    static let preview = WidgetItem(id: UUID(), title: "Summer Trip", entryType: "countDown",
+    static let preview = WidgetItem(id: UUID(), title: String(localized: "Summer Trip"), entryType: "countDown",
                                     startDate: nil, targetDate: .now.addingTimeInterval(86400 * 18),
                                     repeatRule: "none", timezoneID: TimeZone.current.identifier,
                                     colorHex: "#5B7CFA", iconEmoji: "✈️", isPinned: true)
@@ -138,7 +138,7 @@ private struct DayvellaWidgetView: View {
                     Text(item.title).font(.headline).lineLimit(2)
                     Spacer()
                     Text("\(item.days)").font(.system(.largeTitle, design: .rounded).bold()).monospacedDigit()
-                    Text(item.entryType == "countUp" ? "days since" : "days to go").font(.caption).foregroundStyle(.secondary)
+                    Text(item.entryType == "countUp" ? String(localized: "days since") : String(localized: "days to go")).font(.caption).foregroundStyle(.secondary)
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
                 .containerBackground(.fill.tertiary, for: .widget)

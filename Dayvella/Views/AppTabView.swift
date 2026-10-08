@@ -3,11 +3,6 @@ import UniformTypeIdentifiers
 
 struct AppTabView: View {
     @EnvironmentObject private var store: EntryStore
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
-    @Environment(\.verticalSizeClass) private var verticalSizeClass
-    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
-
-    @State private var searchText: String = ""
 
     @State private var showImporter = false
     @State private var importSummary: ImportService.Summary?
@@ -17,27 +12,16 @@ struct AppTabView: View {
     @State private var errorMessage: String = ""
     @State private var showSettings = false
 
-    private var supportsLiquidGlass: Bool {
-        horizontalSizeClass == .regular && verticalSizeClass != .compact && !dynamicTypeSize.isAccessibilitySize
-    }
-
     private var adaptiveSheetDetents: Set<PresentationDetent> {
-        supportsLiquidGlass ? [.fraction(0.75), .fraction(0.9), .large] : [.large]
+        [.large]
     }
 
     private var adaptiveSheetCornerRadius: CGFloat {
-        supportsLiquidGlass ? 32 : 20
+        24
     }
 
     var body: some View {
-        ZStack(alignment: .bottom) {
-            if supportsLiquidGlass {
-                LiquidGlassTabBackground()
-                    .transition(.opacity)
-            }
-
-            tabView
-        }
+        tabView
         .fileImporter(isPresented: $showImporter, allowedContentTypes: [.json], onCompletion: handleFileImport)
         .sheet(isPresented: $showImportSummary, content: importSummarySheet)
         .sheet(item: $exportedFile) { file in
@@ -75,17 +59,13 @@ struct AppTabView: View {
             }
 
             Tab(role: .search) {
-                NavigationStack {
-                    SearchTabView(searchText: $searchText,
-                                  onShowSettings: { showSettings = true })
-                        .navigationTitle("Search")
-                }
-                .searchable(text: $searchText, prompt: Text("Search"))
+                HomeView(initialFilter: .all,
+                         showsFilterPicker: false,
+                         allowsSearch: true,
+                         onShowSettings: { showSettings = true })
             }
         }
         .tabViewStyle(.automatic)
-        .toolbarBackground(supportsLiquidGlass ? .hidden : .visible, for: .tabBar)
-        .toolbarBackground(supportsLiquidGlass ? .hidden : .visible, for: .bottomBar)
     }
 
     private func handleFileImport(_ result: Result<URL, Error>) {
@@ -95,7 +75,7 @@ struct AppTabView: View {
             importSummary = summary
             showImportSummary = true
         case .failure(let error):
-            let status = ImportService.RowStatus(title: "Import Failed", state: .skipped(error.localizedDescription))
+            let status = ImportService.RowStatus(title: String(localized: "Import Failed"), state: .skipped(error.localizedDescription))
             importSummary = ImportService.Summary(statuses: [status])
             showImportSummary = true
         }
@@ -105,7 +85,7 @@ struct AppTabView: View {
         do {
             let items = store.allItems()
             guard !items.isEmpty else {
-                errorMessage = "Nothing to export yet. Add an entry first."
+                errorMessage = String(localized: "Nothing to export yet. Add an entry first.")
                 showErrorAlert = true
                 return
             }
@@ -143,42 +123,6 @@ struct AppTabView: View {
         .presentationDetents(adaptiveSheetDetents, selection: .constant(.large))
         .presentationCornerRadius(adaptiveSheetCornerRadius)
         .presentationDragIndicator(.visible)
-    }
-}
-
-private struct LiquidGlassTabBackground: View {
-    private let cornerRadius: CGFloat = 28
-
-    var body: some View {
-        GeometryReader { proxy in
-            let width = min(proxy.size.width - 48, 620)
-
-            VStack {
-                Spacer()
-                RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                    .fill(.ultraThinMaterial)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                            .stroke(Color.white.opacity(0.2), lineWidth: 1)
-                    )
-                    .overlay(
-                        RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                            .fill(
-                                LinearGradient(colors: [Color.white.opacity(0.32), Color.white.opacity(0.05)],
-                                               startPoint: .topLeading,
-                                               endPoint: .bottomTrailing)
-                            )
-                            .blendMode(.plusLighter)
-                            .opacity(0.7)
-                    )
-                    .shadow(color: Color.black.opacity(0.15), radius: 18, x: 0, y: 12)
-                    .frame(width: width, height: 72)
-                    .padding(.bottom, max(proxy.safeAreaInsets.bottom, 12))
-            }
-            .frame(width: proxy.size.width, height: proxy.size.height)
-        }
-        .ignoresSafeArea(edges: .bottom)
-        .allowsHitTesting(false)
     }
 }
 

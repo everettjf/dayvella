@@ -15,7 +15,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A3B210B7915297CB519620DB"
+               BlueprintIdentifier = "1FD0C54D50902B168E8752BE"
                BuildableName = "Dayvella.app"
                BlueprintName = "Dayvella"
                ReferencedContainer = "container:Dayvella.xcodeproj">
@@ -29,7 +29,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5309074F40BEDCDFDBB3D66E"
+               BlueprintIdentifier = "A7B5B70284B737A99BAC68F0"
                BuildableName = "DayvellaWidget.appex"
                BlueprintName = "DayvellaWidget"
                ReferencedContainer = "container:Dayvella.xcodeproj">
@@ -46,14 +46,27 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A3B210B7915297CB519620DB"
+            BlueprintIdentifier = "1FD0C54D50902B168E8752BE"
             BuildableName = "Dayvella.app"
             BlueprintName = "Dayvella"
             ReferencedContainer = "container:Dayvella.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "799221B970856E8D38936AE0"
+               BuildableName = "DayvellaUITests.xctest"
+               BlueprintName = "DayvellaUITests"
+               ReferencedContainer = "container:Dayvella.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -69,7 +82,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A3B210B7915297CB519620DB"
+            BlueprintIdentifier = "1FD0C54D50902B168E8752BE"
             BuildableName = "Dayvella.app"
             BlueprintName = "Dayvella"
             ReferencedContainer = "container:Dayvella.xcodeproj">
@@ -88,7 +101,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A3B210B7915297CB519620DB"
+            BlueprintIdentifier = "1FD0C54D50902B168E8752BE"
             BuildableName = "Dayvella.app"
             BlueprintName = "Dayvella"
             ReferencedContainer = "container:Dayvella.xcodeproj">

@@ -2,12 +2,12 @@ import SwiftUI
 
 struct EntryEditView: View {
     @Environment(\.dismiss) private var dismiss
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
-    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var draft: EntryDraft
     var isNew: Bool
     var onSave: (EntryDraft) -> Void
     var onDelete: (() -> Void)?
+    var onCancel: (() -> Void)?
+    var onDraftChange: ((EntryDraft) -> Void)?
 
     @State private var showingTimeZonePicker = false
     @FocusState private var focusedField: FocusedField?
@@ -17,18 +17,17 @@ struct EntryEditView: View {
     private let presetReminderDays = [0, 1, 3, 7, 30]
 
     private let colorPalette: [TrendingCardPalette] = TrendingCardPalettes.all
-    private var layout: EditLayout {
-        EditLayout(horizontalSizeClass: horizontalSizeClass, dynamicTypeSize: dynamicTypeSize)
-    }
     private var colorGridColumns: [GridItem] {
-        Array(repeating: GridItem(.fixed(36), spacing: layout.colorGridSpacing), count: layout.colorColumnCount)
+        [GridItem(.adaptive(minimum: 44), spacing: 12)]
     }
 
-    init(draft: EntryDraft, isNew: Bool, onSave: @escaping (EntryDraft) -> Void, onDelete: (() -> Void)? = nil) {
+    init(draft: EntryDraft, isNew: Bool, onSave: @escaping (EntryDraft) -> Void, onDelete: (() -> Void)? = nil, onCancel: (() -> Void)? = nil, onDraftChange: ((EntryDraft) -> Void)? = nil) {
         _draft = State(initialValue: draft)
         self.isNew = isNew
         self.onSave = onSave
         self.onDelete = onDelete
+        self.onCancel = onCancel
+        self.onDraftChange = onDraftChange
     }
 
     var body: some View {
@@ -46,13 +45,13 @@ struct EntryEditView: View {
                     .pickerStyle(.segmented)
                 }
 
-                Section(draft.entryType == .countUp ? "Start" : "Target") {
+                Section(draft.entryType == .countUp ? String(localized: "Start") : String(localized: "Target")) {
                     if draft.entryType == .countUp {
                         DatePicker("Start Date", selection: Binding($draft.startDate, replacingNilWith: Date()), displayedComponents: [.date])
-                            .datePickerStyle(.graphical)
+                            .datePickerStyle(.compact)
                     } else {
                         DatePicker("Target Date", selection: Binding($draft.targetDate, replacingNilWith: Date()), displayedComponents: [.date])
-                            .datePickerStyle(.graphical)
+                            .datePickerStyle(.compact)
                     }
 
                     Button {
@@ -98,7 +97,7 @@ struct EntryEditView: View {
                             .font(.subheadline.weight(.semibold))
                             .foregroundColor(.secondary)
 
-                        LazyVGrid(columns: colorGridColumns, spacing: layout.colorGridSpacing) {
+                        LazyVGrid(columns: colorGridColumns, spacing: 12) {
                             ForEach(colorPalette) { palette in
                                 Button {
                                     draft.colorHex = palette.primaryHex
@@ -119,8 +118,8 @@ struct EntryEditView: View {
                                         )
                                 }
                                 .buttonStyle(.plain)
-                                .accessibilityLabel(palette.name)
-                                .accessibilityValue(isSelected(palette) ? "Selected" : "Not selected")
+                                .accessibilityLabel(String(localized: String.LocalizationValue(palette.name)))
+                                .accessibilityValue(isSelected(palette) ? String(localized: "Selected") : String(localized: "Not selected"))
                             }
                         }
 
@@ -180,17 +179,14 @@ struct EntryEditView: View {
                 }
             }
             .formStyle(.grouped)
-            .modifier(CenteredFormModifier(layout: layout))
             .contentShape(Rectangle())
-            .simultaneousGesture(
-                TapGesture().onEnded {
-                    hideKeyboard()
-                }
-            )
-            .navigationTitle(isNew ? "New Entry" : "Edit Entry")
+            .scrollDismissesKeyboard(.interactively)
+            .navigationTitle(isNew ? String(localized: "New Entry") : String(localized: "Edit Entry"))
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") { dismiss() }
+                    Button("Cancel") {
+                        if let onCancel { onCancel() } else { dismiss() }
+                    }
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") { save() }
@@ -204,18 +200,22 @@ struct EntryEditView: View {
             }
         }
         .onAppear {
+            #if DEBUG
+            focusedField = ProcessInfo.processInfo.arguments.contains("-StoreScreenshotEditor") ? nil : (isNew ? .title : nil)
+            #else
             focusedField = isNew ? .title : nil
+            #endif
         }
 
         .alert("Delete Entry?", isPresented: $showDeleteConfirmation) {
             Button("Delete", role: .destructive) {
                 onDelete?()
-                dismiss()
             }
             Button("Cancel", role: .cancel) {}
         } message: {
             Text("This action cannot be undone.")
         }
+        .onChange(of: draft) { _, value in onDraftChange?(value) }
         .onChange(of: draft.entryType) { _, newValue in
             switch newValue {
             case .countUp:
@@ -285,7 +285,7 @@ struct EntryEditView: View {
     }
 
     private func reminderLabel(for days: Int) -> String {
-        days == 0 ? "On the day" : "\(days) days before"
+        days == 0 ? String(localized: "On the day") : String(localized: "\(days) days before")
     }
 
     private var rangeStartBinding: Binding<Date> {
@@ -298,7 +298,6 @@ struct EntryEditView: View {
 
     private func save() {
         onSave(draft)
-        dismiss()
     }
 
     private func hideKeyboard() {
@@ -331,37 +330,5 @@ private extension Binding where Value == String {
         }, set: { newValue in
             source.wrappedValue = newValue.isEmpty ? nil : newValue
         })
-    }
-}
-
-private struct EditLayout {
-    let contentWidth: CGFloat?
-    let horizontalPadding: CGFloat
-    let colorColumnCount: Int
-    let colorGridSpacing: CGFloat
-
-    init(horizontalSizeClass: UserInterfaceSizeClass?, dynamicTypeSize: DynamicTypeSize) {
-        let useWideLayout = horizontalSizeClass == .regular && !dynamicTypeSize.isAccessibilitySize
-        contentWidth = useWideLayout ? 900 : nil
-        horizontalPadding = useWideLayout ? 40 : 0
-        colorColumnCount = useWideLayout ? 8 : 5
-        colorGridSpacing = useWideLayout ? 16 : 12
-    }
-}
-
-private struct CenteredFormModifier: ViewModifier {
-    let layout: EditLayout
-
-    func body(content: Content) -> some View {
-        Group {
-            if let width = layout.contentWidth {
-                content
-                    .frame(maxWidth: width)
-                    .padding(.horizontal, layout.horizontalPadding)
-                    .frame(maxWidth: .infinity, alignment: .center)
-            } else {
-                content
-            }
-        }
     }
 }

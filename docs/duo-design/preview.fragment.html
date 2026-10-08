@@ -1,0 +1,96 @@
+<div id="dayvella-duo-design">
+  <div class="viz-carousel viz-dotted-background" aria-label="Dayvella Duo design directions">
+    <section data-variant="Browse and focus" aria-label="Browse and focus" class="dv-stage"><div class="dv-app" data-design="split"></div></section>
+    <section data-variant="Card gallery" aria-label="Card gallery" class="dv-stage" hidden><div class="dv-app" data-design="gallery"></div></section>
+  </div>
+</div>
+<style>
+#dayvella-duo-design{--dv-bg:light-dark(#f5f5f9,#111116);--dv-panel:light-dark(#fff,#202027);--dv-ink:light-dark(#202126,#f7f7fb);--dv-secondary:light-dark(#656873,#a9abb6);--dv-line:light-dark(#e5e5eb,#373740);--dv-blue:light-dark(#0879d1,#55afff);--dv-soft:light-dark(#e9f4fc,#193145);--dv-selected:light-dark(#dcedfc,#16334b);--dv-pink:light-dark(#f4e4e7,#3c2d35);--dv-lavender:light-dark(#ece8f6,#33303f);--dv-mint:light-dark(#e6efe9,#2a3931);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--dv-ink)}
+#dayvella-duo-design .dv-stage{min-height:630px;display:flex;align-items:center;justify-content:center;padding:22px 10px;box-sizing:border-box}
+#dayvella-duo-design .dv-stage[hidden]{display:none}
+#dayvella-duo-design .dv-app{width:100%;max-width:704px;min-height:486px;background:var(--dv-bg);border:1px solid var(--dv-line);border-radius:30px;overflow:hidden;position:relative;box-shadow:0 18px 35px #00000012;font-size:14px;line-height:1.4}
+#dayvella-duo-design .dv-status{height:30px;padding:10px 24px 0;display:flex;justify-content:space-between;font-size:11px;font-weight:600}
+#dayvella-duo-design .dv-head{display:flex;align-items:center;justify-content:space-between;padding:8px 22px 18px;gap:10px}
+#dayvella-duo-design .dv-brand{font-size:21px;font-weight:700;letter-spacing:-.7px}
+#dayvella-duo-design .dv-head span{color:var(--dv-secondary);font-size:12px}
+#dayvella-duo-design button{font:inherit;color:inherit;border:0;background:none;min-height:40px;cursor:default}
+#dayvella-duo-design button:focus-visible{outline:3px solid var(--dv-blue);outline-offset:2px}
+#dayvella-duo-design .dv-round{background:var(--dv-panel);border:1px solid var(--dv-line);border-radius:50%;width:40px;display:grid;place-items:center}
+#dayvella-duo-design .dv-round svg{width:19px;height:19px}
+#dayvella-duo-design .dv-body{display:grid;grid-template-columns:42% minmax(0,1fr) 50px;padding:0 14px 20px;gap:16px;align-items:start}
+#dayvella-duo-design .dv-list{display:grid;gap:10px;min-width:0}
+#dayvella-duo-design .dv-list-heading{display:flex;justify-content:space-between;padding:0 6px 2px;color:var(--dv-secondary);font-size:12px}
+#dayvella-duo-design .dv-entry{border-radius:17px;background:var(--dv-panel);padding:13px 14px;display:grid;grid-template-columns:minmax(0,1fr) auto;text-align:left;gap:4px 8px;border:1px solid transparent;min-height:77px;width:100%;box-sizing:border-box}
+#dayvella-duo-design .dv-entry[aria-pressed=true]{background:var(--dv-selected);border-color:var(--dv-blue)}
+#dayvella-duo-design .dv-entry b{font-size:14px;font-weight:600;overflow-wrap:anywhere}
+#dayvella-duo-design .dv-entry small{font-size:11px;color:var(--dv-secondary)}
+#dayvella-duo-design .dv-entry strong{font-size:28px;grid-column:2;grid-row:1/3;align-self:center;letter-spacing:-1px}
+#dayvella-duo-design .dv-detail{min-width:0}
+#dayvella-duo-design .dv-hero{border-radius:23px;background:var(--dv-soft);padding:24px 20px;text-align:center;min-height:208px;box-sizing:border-box}
+#dayvella-duo-design .dv-emoji{font-size:31px}
+#dayvella-duo-design .dv-hero h2{font-size:20px;line-height:1.2;letter-spacing:-.5px;margin:12px 0 10px;overflow-wrap:anywhere}
+#dayvella-duo-design .dv-number{font-size:70px;font-weight:700;line-height:1;letter-spacing:-4px;font-variant-numeric:tabular-nums}
+#dayvella-duo-design .dv-hero p{margin:5px 0 0;font-size:12px;color:var(--dv-secondary)}
+#dayvella-duo-design .dv-facts{padding:12px 3px}
+#dayvella-duo-design .dv-fact{display:flex;justify-content:space-between;gap:12px;padding:10px 0;font-size:12px;border-bottom:1px solid var(--dv-line)}
+#dayvella-duo-design .dv-fact span{color:var(--dv-secondary)}
+#dayvella-duo-design .dv-primary{border-radius:22px;background:var(--dv-blue);color:light-dark(#fff,#071e31);width:100%;font-weight:600;min-height:44px}
+#dayvella-duo-design .dv-secondary-action{color:var(--dv-blue);width:100%;font-size:12px}
+#dayvella-duo-design .dv-rail{display:flex;align-items:center;flex-direction:column;gap:5px;align-self:stretch;justify-content:end}
+#dayvella-duo-design .dv-rail button{width:42px;border-radius:17px;display:grid;place-items:center;min-height:47px}
+#dayvella-duo-design .dv-rail button[aria-pressed=true]{background:var(--dv-selected);color:var(--dv-blue)}
+#dayvella-duo-design .dv-rail svg{width:21px;height:21px}
+#dayvella-duo-design .dv-form{background:var(--dv-panel);border-radius:22px;padding:17px;display:grid;gap:12px}
+#dayvella-duo-design .dv-form-head{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:15px;font-weight:600}
+#dayvella-duo-design .dv-form-head button{color:var(--dv-blue);font-size:12px}
+#dayvella-duo-design label{font-size:12px;display:grid;gap:5px;color:var(--dv-secondary)}
+#dayvella-duo-design input,#dayvella-duo-design select{font:inherit;font-size:14px;color:var(--dv-ink);border:1px solid var(--dv-line);border-radius:10px;background:var(--dv-bg);padding:10px;box-sizing:border-box;width:100%;min-width:0}
+#dayvella-duo-design .dv-form .dv-hero{padding:15px;min-height:125px}
+#dayvella-duo-design .dv-form .dv-hero h2{font-size:15px;margin:3px}
+#dayvella-duo-design .dv-form .dv-number{font-size:45px;letter-spacing:-2px}
+#dayvella-duo-design .dv-empty{padding:65px 15px;text-align:center;color:var(--dv-secondary)}
+#dayvella-duo-design .dv-app[data-pose=book] .dv-body{gap:26px;grid-template-columns:42% minmax(0,1fr) 45px}
+#dayvella-duo-design .dv-app[data-pose=closed]{max-width:350px;min-height:555px}
+#dayvella-duo-design .dv-app[data-pose=closed] .dv-body{display:block;padding:0 18px 20px}
+#dayvella-duo-design .dv-app[data-pose=closed] .dv-detail{display:none}
+#dayvella-duo-design .dv-app[data-pose=closed] .dv-rail{flex-direction:row;justify-content:space-around;margin-top:18px}
+#dayvella-duo-design .dv-app[data-pose=closed][data-editing=true] .dv-list{display:none}
+#dayvella-duo-design .dv-app[data-pose=closed][data-editing=true] .dv-detail{display:block}
+#dayvella-duo-design .dv-app[data-design=gallery]:not([data-editing=true]):not([data-pose=closed]) .dv-body{grid-template-columns:minmax(0,1fr) 50px}
+#dayvella-duo-design .dv-app[data-design=gallery]:not([data-editing=true]):not([data-pose=closed]) .dv-list{grid-template-columns:1fr 1fr}
+#dayvella-duo-design .dv-app[data-design=gallery]:not([data-editing=true]):not([data-pose=closed]) .dv-list-heading{grid-column:1/-1}
+#dayvella-duo-design .dv-app[data-design=gallery]:not([data-editing=true]):not([data-pose=closed]) .dv-entry{min-height:153px;display:flex;flex-direction:column;background:var(--dv-lavender)}
+#dayvella-duo-design .dv-app[data-design=gallery]:not([data-editing=true]):not([data-pose=closed]) .dv-entry:nth-child(3){background:var(--dv-soft)}
+#dayvella-duo-design .dv-app[data-design=gallery]:not([data-editing=true]):not([data-pose=closed]) .dv-entry:nth-child(4){background:var(--dv-mint)}
+#dayvella-duo-design .dv-app[data-design=gallery]:not([data-editing=true]):not([data-pose=closed]) .dv-entry:nth-child(5){background:var(--dv-pink)}
+#dayvella-duo-design .dv-app[data-design=gallery]:not([data-editing=true]):not([data-pose=closed]) .dv-entry strong{font-size:40px;align-self:end;margin-top:auto}
+#dayvella-duo-design .dv-app[data-design=gallery]:not([data-editing=true]):not([data-pose=closed]) .dv-detail{display:none}
+@media(max-width:550px){#dayvella-duo-design .dv-stage{min-height:690px;padding:16px 0}#dayvella-duo-design .dv-app{max-width:350px;min-height:555px}#dayvella-duo-design .dv-body{display:block!important;padding:0 16px 18px}#dayvella-duo-design .dv-detail{display:none!important}#dayvella-duo-design .dv-app[data-editing=true] .dv-list{display:none!important}#dayvella-duo-design .dv-app[data-editing=true] .dv-detail{display:block!important}#dayvella-duo-design .dv-list{grid-template-columns:1fr!important}#dayvella-duo-design .dv-entry{min-height:77px!important;display:grid!important;grid-template-columns:1fr auto!important;background:var(--dv-panel)!important}#dayvella-duo-design .dv-entry strong{font-size:28px!important;margin:0!important}#dayvella-duo-design .dv-rail{flex-direction:row;justify-content:space-around;margin-top:16px}}
+</style>
+<script>
+(function(){
+  const root=document.getElementById('dayvella-duo-design');
+  const items=[{title:'Tokyo adventure',emoji:'✈️',days:80,date:'2026-12-26',kind:'Countdown',pinned:true},{title:'A new beginning',emoji:'🌱',days:366,date:'2025-10-06',kind:'Days since',pinned:false},{title:'Anniversary',emoji:'❤️',days:65,date:'2026-12-11',kind:'Countdown',pinned:true},{title:'Birthday',emoji:'🎂',days:120,date:'2027-02-04',kind:'Countdown',pinned:false}];
+  const state={pose:'expanded',editing:false};
+  function icon(name){return '<i data-lucide="'+name+'" aria-hidden="true"></i>';}
+  function safe(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+  root.querySelectorAll('.dv-app').forEach(app=>{
+    const local={selected:0,editing:false,filter:'All',draft:null,newDraft:false};
+    function hero(item){return '<div class="dv-hero"><div class="dv-emoji">'+item.emoji+'</div><h2>'+safe(item.title)+'</h2><div class="dv-number">'+item.days+'</div><p>'+ (item.kind==='Countdown'?'days to go':'days since')+'</p></div>';}
+    function render(){
+      const item=items[local.selected];const editing=state.editing||local.editing;app.dataset.pose=state.pose;app.dataset.editing=editing;
+      const filtered=items.map((entry,i)=>({entry,i})).filter(({entry})=>local.filter!=='Pinned'||entry.pinned);
+      const list='<div class="dv-list-heading"><span>'+local.filter+' dates</span><span>'+filtered.length+'</span></div>'+filtered.map(({entry,i})=>'<button class="dv-entry cursor-interaction" data-entry="'+i+'" aria-pressed="'+(i===local.selected)+'"><b>'+entry.emoji+' '+safe(entry.title)+'</b><small>'+entry.kind+'</small><strong>'+entry.days+'</strong></button>').join('');
+      let detail=hero(item)+'<div class="dv-facts"><div class="dv-fact"><span>'+ (item.kind==='Countdown'?'Target date':'Start date')+'</span><b>'+item.date+'</b></div><div class="dv-fact"><span>Repeat</span><b>'+(local.selected>1?'Yearly':'None')+'</b></div></div><button class="dv-primary cursor-interaction" data-action="edit">Edit date</button><button class="dv-secondary-action cursor-interaction" data-action="pin">'+(item.pinned?'Unpin date':'Pin date')+'</button>';
+      if(editing){const draft=local.draft||item;detail='<div class="dv-form"><div class="dv-form-head"><button data-action="cancel" class="cursor-interaction">Cancel</button><span>Edit date</span><button data-action="save" class="cursor-interaction">Save</button></div>'+hero(draft)+'<label>Title<input name="title" value="'+safe(draft.title)+'"></label><label>Target date<input name="date" type="date" value="'+draft.date+'"></label><label>Repeat<select name="repeat"><option>None</option><option>Yearly</option></select></label></div>';}
+      app.innerHTML='<div class="dv-status"><span>9:41</span><span>••• ▰</span></div><div class="dv-head"><div><div class="dv-brand">Dayvella</div><span>Your days, close at hand.</span></div><button class="dv-round cursor-interaction" data-action="new" aria-label="Add date">'+icon('plus')+'</button></div><div class="dv-body"><div class="dv-list">'+list+'</div><div class="dv-detail">'+detail+'</div><nav class="dv-rail" aria-label="Dates"><button class="cursor-interaction" data-filter="All" aria-label="All dates" aria-pressed="'+(local.filter==='All')+'">'+icon('layout-grid')+'</button><button class="cursor-interaction" data-filter="Pinned" aria-label="Pinned dates" aria-pressed="'+(local.filter==='Pinned')+'">'+icon('pin')+'</button><button class="cursor-interaction" data-action="edit" aria-label="Edit selected date">'+icon('pencil')+'</button></nav></div>';
+      if(globalThis.lucide)lucide.createIcons({attrs:{width:19,height:19}});
+    }
+    app.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.entry!==undefined){local.selected=Number(b.dataset.entry);if(app.dataset.design==='gallery'||state.pose==='closed')local.editing=true;local.draft=null;}if(b.dataset.filter){local.filter=b.dataset.filter;local.editing=false;state.editing=false;}const a=b.dataset.action;if(a==='edit'||a==='new'){local.editing=true;local.newDraft=a==='new';local.draft=a==='new'?{title:'New date',emoji:'✨',days:80,date:'2026-12-26',kind:'Countdown',pinned:false}:{...items[local.selected]};}if(a==='cancel'){local.editing=false;state.editing=false;local.draft=null;}if(a==='save'){if(local.draft){if(local.newDraft){items.push({...local.draft});local.selected=items.length-1;}else Object.assign(items[local.selected],local.draft);}local.editing=false;state.editing=false;local.draft=null;}if(a==='pin')items[local.selected].pinned=!items[local.selected].pinned;render();});
+    app.addEventListener('input',e=>{if(e.target.name==='title'||e.target.name==='date'){local.draft=local.draft||{...items[local.selected]};local.draft[e.target.name]=e.target.value;if(e.target.name==='title')app.querySelector('.dv-form h2').textContent=e.target.value;}});
+    app.dvRender=render;render();
+  });
+  function all(){root.querySelectorAll('.dv-app').forEach(app=>app.dvRender());}
+  if(globalThis.Tweak){const tweak=new Tweak({container:root,onChange:all});tweak.addSelect(state,'pose',{label:'Device pose',options:[{label:'Expanded',value:'expanded'},{label:'Book',value:'book'},{label:'Closed',value:'closed'}]});tweak.addToggle(state,'editing',{label:'Show editor'});}
+})();
+</script>

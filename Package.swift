@@ -18,6 +18,7 @@ let package = Package(
                 "DayvellaApp.swift",
                 "Info.plist",
                 "Resources",
+                "Localizable.xcstrings",
                 "Services/ExportService.swift",
                 "Services/ImportService.swift",
                 "Services/NotificationService.swift",
